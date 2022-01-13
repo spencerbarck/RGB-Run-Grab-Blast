@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class CircleStats : MonoBehaviour
 {
-    public float Speed;
     public float Health;
+    public float Speed;
     public float Damage;
-    void Start()
+    public SpriteRenderer circleSpriteRenderer;
+    protected virtual void Start()
     {
-        
+        circleSpriteRenderer = GetComponent<SpriteRenderer>();
+        UpdateStats(circleSpriteRenderer.color);
     }
 
-    private void UpdateStats(Color circleColor)
+    public void UpdateStats(Color circleColor)
     {
-
+        Health = circleColor.r*255;
+        Speed = circleColor.g*255;
+        Damage = circleColor.b*255;
     }
 }

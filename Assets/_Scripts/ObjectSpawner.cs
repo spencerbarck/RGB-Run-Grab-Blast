@@ -17,9 +17,7 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField]
     private GameObject objectToSpawn;
     public float ChanceToSpawn = 1f;
-
     public int objectsSpawned { get; private set; } = 0;
-
     void Start()
     {
         startingPosition = GetComponent<Transform>().position;
@@ -43,6 +41,5 @@ public class ObjectSpawner : MonoBehaviour
             //Go to top of row
             currentPosition = new Vector3(currentPosition.x + xDistance,startingPosition.y,1);
         }
-        Debug.Log(objectsSpawned);
     }
 }

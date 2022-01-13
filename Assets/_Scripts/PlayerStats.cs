@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : CircleStats
 {
-    void Start()
+    protected override void Start()
     {
-        GameManager.instance.StorePlayerColor(GetComponent<SpriteRenderer>().color);
+        base.Start();
+        GameManager.instance.StorePlayerColor(circleSpriteRenderer.color);
+        Debug.Log("Heath: "+Health+" Speed: "+Speed+" Damage: "+Damage);
     }
 }

@@ -1071,6 +1071,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e31828846a0074ebf31b1cdea3fc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
+  Speed: 0
+  Damage: 0
+  circleSpriteRenderer: {fileID: 1329841975}
 --- !u!1 &1650090732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerColor: {r: 0, g: 0, b: 0, a: 0}
+  PlayerStats: {fileID: 1329841977}
 --- !u!1 &1720969520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,5 +1626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63f1a1fda1174546b856727cb7c3628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxSpeed: 8
   rigidBody: {fileID: 2962827011463844845}
   playerCamera: {fileID: 519420031}

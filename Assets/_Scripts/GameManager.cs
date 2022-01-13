@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
+    public Color playerColor;
+    public PlayerStats PlayerStats;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -17,10 +18,9 @@ public class GameManager : MonoBehaviour
         instance=this;
     }
 
-    public Color playerColor;
-
     public void StorePlayerColor(Color inputColor)
     {
         playerColor = inputColor;
+        PlayerStats.UpdateStats(inputColor);
     }
 }

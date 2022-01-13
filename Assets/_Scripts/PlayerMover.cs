@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
-    private float _speed = 5f;
-
+    public float MaxSpeed = 8f;
+    public float MinSpeed = 2f;
+    private float speed;
+    private float rgbToSpeedConversion;
     [SerializeField]
     private Rigidbody2D rigidBody;
     [SerializeField]
     private Camera playerCamera;
-
     Vector2 movement;
     Vector2 mousePosition;
+    private void Start()
+    {
+        rgbToSpeedConversion = MaxSpeed/255;
+        speed = GameManager.instance.PlayerStats.Speed * rgbToSpeedConversion;
+        if(speed<MinSpeed)
+            speed = MinSpeed;
+    }
     private void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -23,7 +31,7 @@ public class PlayerMover : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidBody.MovePosition(rigidBody.position + movement * _speed * Time.fixedDeltaTime);
+        rigidBody.MovePosition(rigidBody.position + movement * speed * Time.fixedDeltaTime);
 
         Vector2 lookDirection = mousePosition - rigidBody.position;
         float rotationAngle = -1 * Mathf.Atan2(lookDirection.x,lookDirection.y) * Mathf.Rad2Deg;
