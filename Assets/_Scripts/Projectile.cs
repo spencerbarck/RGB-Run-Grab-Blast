@@ -10,13 +10,16 @@ public class Projectile : MonoBehaviour
     private float rgbToDamageConversion;
     private void Start()
     {
-
+        //Sets projectile color to the same color as the player
         GetComponent<SpriteRenderer>().color = GameManager.instance.playerColor;
+
         rgbToDamageConversion = MaxDamage/255;
+
+        //Sets the projectile damage to correspond to the player color
         damage = GameManager.instance.PlayerStats.Damage * rgbToDamageConversion;
+
         if(damage<MinDamage)
             damage = MinDamage;
-        Debug.Log("Player Damage " + damage);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -25,6 +28,7 @@ public class Projectile : MonoBehaviour
 
         if(enemy != null)
             enemy.TakeDamage(damage);
+
         Destroy(gameObject);
     }
 }

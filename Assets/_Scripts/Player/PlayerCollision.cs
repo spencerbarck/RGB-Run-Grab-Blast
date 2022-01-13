@@ -8,13 +8,13 @@ public class PlayerCollision : CircleCollision
     public float MinHealth = 50f;
     private float rgbToHealthConversion;
 
-    private void Start()
+    public void InitPlayerHealth()
     {
         rgbToHealthConversion = MaxHealth/255;
+
         health = GameManager.instance.PlayerStats.Health * rgbToHealthConversion;
+
         if(health<MinHealth)
             health = MinHealth;
-
-        Debug.Log("Player" + health);
     }
 }

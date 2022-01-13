@@ -11,11 +11,11 @@ public class PlayerMover : CircleMovement
     private Camera playerCamera;
     Vector2 movement;
     Vector2 mousePosition;
-    protected override void Start()
-    {
-        base.Start();
 
+    public void InitPlayerSpeed()
+    {
         rgbToSpeedConversion = MaxSpeed/255;
+
         speed = GameManager.instance.PlayerStats.Speed * rgbToSpeedConversion;
         if(speed<MinSpeed)
             speed = MinSpeed;

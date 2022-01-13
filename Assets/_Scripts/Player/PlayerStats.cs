@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerStats : CircleStats
 {
-    
+    public PlayerCollision PlayerCollision;
+    public PlayerMover PlayerMover;
     protected override void Start()
     {
-
         base.Start();
-        GameManager.instance.StorePlayerColor(circleSpriteRenderer.color);
-        Debug.Log("Heath: "+Health+" Speed: "+Speed+" Damage: "+Damage);
+        //Store the player color in game manager
+        GameManager.instance.playerColor = circleSpriteRenderer.color;
+        PlayerCollision.InitPlayerHealth();
+        PlayerMover.InitPlayerSpeed();
     }
 }

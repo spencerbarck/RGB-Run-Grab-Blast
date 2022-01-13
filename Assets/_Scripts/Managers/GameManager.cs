@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public Color playerColor;
     public PlayerStats PlayerStats;
+    public PlayerCollision PlayerCollision;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -16,11 +17,5 @@ public class GameManager : MonoBehaviour
         }
 
         instance=this;
-    }
-
-    public void StorePlayerColor(Color inputColor)
-    {
-        playerColor = inputColor;
-        PlayerStats.UpdateStats(inputColor);
     }
 }
