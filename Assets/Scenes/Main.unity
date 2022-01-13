@@ -820,7 +820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765652406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13, y: -13, z: 0}
+  m_LocalPosition: {x: -0.7, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1720969521}
@@ -840,10 +840,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xDistance: 2
   yDistance: 2
-  rowCount: 14
-  columnCount: 10
+  rowCount: 3
+  columnCount: 3
   objectToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
-  ChanceToSpawn: 0.75
+  ChanceToSpawn: 1
 --- !u!1 &896141922
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +956,7 @@ GameObject:
   - component: {fileID: 2962827011463844845}
   - component: {fileID: 8315140666343405154}
   - component: {fileID: 1329841976}
+  - component: {fileID: 1329841978}
   - component: {fileID: 1329841977}
   m_Layer: 0
   m_Name: PlayerCircle
@@ -1058,7 +1059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 710516899}
   projectilePrefab: {fileID: 446229123095716097, guid: 5f23a808be6ea7245b9ebd775a07ed49, type: 3}
-  _projectileForce: 20
+  projectileForce: 20
 --- !u!114 &1329841977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1075,6 +1076,20 @@ MonoBehaviour:
   Speed: 0
   Damage: 0
   circleSpriteRenderer: {fileID: 1329841975}
+--- !u!114 &1329841978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329841972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d6ac85dc042784bab5849ffba50cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 200
+  MinHealth: 50
 --- !u!1 &1650090732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,5 +1642,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 8
-  rigidBody: {fileID: 2962827011463844845}
+  MinSpeed: 2
   playerCamera: {fileID: 519420031}

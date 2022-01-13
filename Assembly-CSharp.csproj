@@ -36,18 +36,22 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\PlayerShooter.cs" />
-     <Compile Include="Assets\_Scripts\PlayerMover.cs" />
-     <Compile Include="Assets\_Scripts\PlayerStats.cs" />
-     <Compile Include="Assets\_Scripts\CameraManager.cs" />
+     <Compile Include="Assets\_Scripts\Circle\CircleStats.cs" />
+     <Compile Include="Assets\_Scripts\Player\PlayerShooter.cs" />
+     <Compile Include="Assets\_Scripts\Player\PlayerMover.cs" />
+     <Compile Include="Assets\_Scripts\Player\PlayerStats.cs" />
+     <Compile Include="Assets\_Scripts\Managers\CameraManager.cs" />
      <Compile Include="Assets\_Scripts\ObjectSpawner.cs" />
      <Compile Include="Assets\_Scripts\StartRandomColor.cs" />
+     <Compile Include="Assets\_Scripts\Player\PlayerCollision.cs" />
      <Compile Include="Assets\_Scripts\StartRandomDimension.cs" />
      <Compile Include="Assets\_Scripts\Projectile.cs" />
-     <Compile Include="Assets\_Scripts\GameManager.cs" />
+     <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Destructable.cs" />
-     <Compile Include="Assets\_Scripts\CircleStats.cs" />
-     <Compile Include="Assets\_Scripts\PlayerCollision.cs" />
+     <Compile Include="Assets\_Scripts\Circle\CircleCollision.cs" />
+     <Compile Include="Assets\_Scripts\Circle\CircleMovement.cs" />
+     <Compile Include="Assets\_Scripts\Enemy\EnemyMover.cs" />
+     <Compile Include="Assets\_Scripts\Enemy\EnemyCollision.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
