@@ -10,7 +10,7 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField]
     private GameObject projectilePrefab;
     [SerializeField]
-    private float _projectileForce = 20f;
+    private float projectileForce = 20f;
     private void Update()
     {
         if(Input.GetButtonDown("Fire1"))
@@ -23,6 +23,6 @@ public class PlayerShooter : MonoBehaviour
     {
         GameObject projectile = Instantiate(projectilePrefab,firePoint.position,firePoint.rotation);
         Rigidbody2D rigidBody = projectile.GetComponent<Rigidbody2D>();
-        rigidBody.AddForce(firePoint.up * _projectileForce, ForceMode2D.Impulse);
+        rigidBody.AddForce(firePoint.up * projectileForce, ForceMode2D.Impulse);
     }
 }
