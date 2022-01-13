@@ -794,6 +794,7 @@ MonoBehaviour:
   rowCount: 10
   columnCount: 10
   objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  ChanceToSpawn: 0.33333334
 --- !u!1 &765652406
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,8 +841,9 @@ MonoBehaviour:
   xDistance: 2
   yDistance: 2
   rowCount: 14
-  columnCount: 14
+  columnCount: 10
   objectToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
+  ChanceToSpawn: 0.75
 --- !u!1 &896141922
 GameObject:
   m_ObjectHideFlags: 0
