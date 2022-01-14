@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89d45e3c9e882c4395ed977db7a3b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 0}
+  Player: {fileID: 1329841973}
 --- !u!1 &710516898
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +858,7 @@ MonoBehaviour:
   firePoint: {fileID: 710516899}
   projectilePrefab: {fileID: 446229123095716097, guid: 5f23a808be6ea7245b9ebd775a07ed49, type: 3}
   projectileForce: 20
+  cameraManager: {fileID: 519420033}
 --- !u!114 &1329841977
 MonoBehaviour:
   m_ObjectHideFlags: 0
