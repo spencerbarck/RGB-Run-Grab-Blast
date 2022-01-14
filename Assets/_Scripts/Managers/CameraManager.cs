@@ -75,11 +75,9 @@ public class CameraManager : MonoBehaviour
     {
         if (!isShaking || Time.time > shakeTimeEnd)
         {
-            Debug.Log("Not Shaking");
             isShaking = false;
             return Vector3.zero;
         }
-        Debug.Log("Shaking");
 
         Vector3 tempOffset = shakeVector;
         tempOffset *= shakeMag;

@@ -22,15 +22,15 @@ public class EnemyMover : CircleMovement
     }
     private void Update()
     {
-        //if(walkTimer<walkTimerTime)
-        //{
+        if(walkTimer<walkTimerTime)
+        {
             walkTimer += Time.deltaTime;
-            movement.x = 0.25f;
-        //}
-        //else movement.x = 0f;
+            //movement.x = 0.25f;
+        }
+        else movement.x = 0f;
     }
     private void FixedUpdate()
     {
-        rigidBody.MovePosition(rigidBody.position + movement * speed * Time.fixedDeltaTime);
+        //rigidBody.MovePosition(rigidBody.position + movement * speed * Time.fixedDeltaTime);
     }
 }

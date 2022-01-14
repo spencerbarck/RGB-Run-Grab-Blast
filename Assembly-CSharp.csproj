@@ -36,11 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Assets\z_AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll" />
+  </ItemGroup>
+  <ItemGroup>
      <Compile Include="Assets\_Scripts\Circle\CircleStats.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerShooter.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerMover.cs" />
+     <Compile Include="Assets\_Scripts\Enemy\EnemyMover.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerStats.cs" />
+     <Compile Include="Assets\_Scripts\Circle\CircleMovement.cs" />
      <Compile Include="Assets\_Scripts\Managers\CameraManager.cs" />
+     <Compile Include="Assets\_Scripts\Enemy\EnemyCollision.cs" />
+     <Compile Include="Assets\_Scripts\Circle\CircleCollision.cs" />
      <Compile Include="Assets\_Scripts\ObjectSpawner.cs" />
      <Compile Include="Assets\_Scripts\StartRandomColor.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerCollision.cs" />
@@ -48,10 +55,7 @@
      <Compile Include="Assets\_Scripts\Projectile.cs" />
      <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Destructable.cs" />
-     <Compile Include="Assets\_Scripts\Circle\CircleCollision.cs" />
-     <Compile Include="Assets\_Scripts\Circle\CircleMovement.cs" />
-     <Compile Include="Assets\_Scripts\Enemy\EnemyMover.cs" />
-     <Compile Include="Assets\_Scripts\Enemy\EnemyCollision.cs" />
+     <Compile Include="Assets\_Scripts\ObsticleGridUpdate.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -276,6 +280,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Assets\z_AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -685,12 +692,6 @@
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Cinemachine">
-        <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -720,6 +721,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{e8ab11a0-d41a-35d2-1a6d-f288556f9de0}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{2863d1f9-ab88-4762-f92f-a2feab544b05}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{05d11814-39f3-ad54-0d3d-8be2d6c249ba}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

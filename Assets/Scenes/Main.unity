@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 475353448}
   - component: {fileID: 475353450}
   - component: {fileID: 475353449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 721559602}
   - component: {fileID: 721559603}
   - component: {fileID: 721559604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765652406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.89, y: -1.12, z: 0}
+  m_LocalPosition: {x: -13.78, y: -14.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1720969521}
@@ -704,8 +704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xDistance: 2
   yDistance: 2
-  rowCount: 6
-  columnCount: 6
+  rowCount: 9
+  columnCount: 9
   objectToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
   ChanceToSpawn: 1
 --- !u!1 &896141922
@@ -891,6 +891,92 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 200
   MinHealth: 50
+--- !u!1 &1443450984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443450985}
+  - component: {fileID: 1443450986}
+  m_Layer: 0
+  m_Name: A*Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443450985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443450984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.0826201, y: 1.4856, z: 1.4856}
+  m_Children: []
+  m_Father: {fileID: 1720969521}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1443450986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443450984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAACQn+ulHbMAegIAADYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAU/CuMzoUR4GDorXUI6SEJE9rJxRdFesYabMkjyQGS4b/3SbaxS31B7PvaXT37i0hlK+BOm42R4kkLIN9HxJ/Jt1EffIQT22u1k5/Q5bxJ4XKfxELOK3NSIz71ZVaX4IzkP9S+8MkUwVrJTJtyLfaQaOsswhkrLGDIaOerFUJfI3LCn/HKl5zxNIv96RNPKzq64JGDcmAGqdMJDc+irRjTSbTyD40Wbel4OVlF9G5Oo7v1mC5Dn1rxgpUVCC+qbzeP2jbzaUhTKLfN8NK4LgppW67EnavgRcIqW6NSTBCSofZAcDqZI5CD3OfOKxmWv2SZBddaY9j5Xho0selLfurG2ZLZQ8PsgxW1n7SIAqmm59N/4XHDOTO6fOzGTqkf4XLJD6/szJl1A+eH8P2AefDnyIoDey/gLQf1rDdG10pg0Jnal9YWZvf936uyJAd+6PGG6g1YV73h3UV31+w1XIL4U1LI8t2HJlED7AodDA/bAQav5hcSDrtj2xaIehZ/LPxm++GStYEHaazDUKtSeXrvujY+layDZ15N7RJtFAS4JV2BYoU7b7GNu73Bm9hg7E3kgfnXqR3exrq35KYkwH0+pTehrT5eL8vm+vgENn+pXSEV9KR94Bl9SrRSzYINPenKdrXJGB+U7Wsp/l0tks1jumQ8XvBlHAsajZcgMprxeHpH+SxmEQm7JxXqZMW2Idrag7em+uYK96z7yow2hlVh2YVhx438LPWQoFSZ3nEDoF6aFlfmYHAKvpdiLSQ6tAPnpAoXTr5SUmh+AJFeZ6ZB6vrkDEv7Limp5Id2HklJEr4rKfHwdZm3Bj4kHP3wrtmFXP4CUEsDBBQAAAgIAACQn+tMkbVibQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSmrG5gUVisrlZsoW5eYqBia5FakqaQVqyuaGpQbKReaKJUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACQn+ulHbMAegIAADYFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACQn+tMkbVibQAAAHgAAAAJACQAAAAAAAAAAAAAAMcCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAfwMAAAAA
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
 --- !u!1 &1650090732
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +1023,7 @@ MonoBehaviour:
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   PlayerStats: {fileID: 1329841977}
   PlayerCollision: {fileID: 1329841978}
+  Pathfinder: {fileID: 1443450986}
 --- !u!1 &1720969520
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +1054,7 @@ Transform:
   - {fileID: 1650090733}
   - {fileID: 726682548}
   - {fileID: 765652407}
+  - {fileID: 1443450985}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1011,7 +1099,7 @@ GameObject:
   - component: {fileID: 1792509651}
   - component: {fileID: 1792509653}
   - component: {fileID: 1792509652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,7 +1334,7 @@ GameObject:
   - component: {fileID: 2088014008}
   - component: {fileID: 2088014009}
   - component: {fileID: 2088014010}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

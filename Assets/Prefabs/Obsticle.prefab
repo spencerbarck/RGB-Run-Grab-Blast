@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5233222433727159573}
   - component: {fileID: 5233222433727159574}
   - component: {fileID: 8615396730185881839}
-  m_Layer: 0
+  - component: {fileID: -4496938324641707231}
+  m_Layer: 6
   m_Name: Obsticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4133729b916b71a4ab6e9ccdd0dbe9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxXSize: 1
-  maxYSize: 1
+  maxXSize: 5
+  maxYSize: 5
 --- !u!61 &8615396730185881839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +125,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-4496938324641707231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5233222433727159560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c452373d9105a047933c199b5575f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obsticleCollider: {fileID: 8615396730185881839}

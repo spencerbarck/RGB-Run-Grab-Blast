@@ -41,5 +41,6 @@ public class ObjectSpawner : MonoBehaviour
             //Go to top of row
             currentPosition = new Vector3(currentPosition.x + xDistance,startingPosition.y,1);
         }
+        AstarPath.active.Scan();
     }
 }
