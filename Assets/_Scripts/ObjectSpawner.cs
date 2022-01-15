@@ -18,9 +18,26 @@ public class ObjectSpawner : MonoBehaviour
     private GameObject objectToSpawn;
     public float ChanceToSpawn = 1f;
     public int objectsSpawned { get; private set; } = 0;
+
+    [SerializeField]
+    private int spawnIterations = 1;
+    [SerializeField]
+    private float respawnDelay = 1f;
+    private float nextRespawn = 0;
+    [SerializeField]
+    private bool startSpawned = true;
     void Start()
     {
+        nextRespawn = respawnDelay;
         startingPosition = GetComponent<Transform>().position;
+
+        if(startSpawned) SpawnObjects();
+    }
+
+    public void SpawnObjects()
+    {
+        if(spawnIterations<1) return;
+        
         currentPosition = startingPosition;
 
         for(int i = 0; i < rowCount; i++)
@@ -42,5 +59,17 @@ public class ObjectSpawner : MonoBehaviour
             currentPosition = new Vector3(currentPosition.x + xDistance,startingPosition.y,1);
         }
         AstarPath.active.Scan();
+
+        spawnIterations--;
+    }
+
+    private void Update()
+    {
+        if(Time.time > nextRespawn)
+        {
+            SpawnObjects();
+            nextRespawn = Time.time + respawnDelay;
+        }
+
     }
 }

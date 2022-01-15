@@ -659,6 +659,9 @@ MonoBehaviour:
   columnCount: 10
   objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
   ChanceToSpawn: 0.33333334
+  spawnIterations: 1
+  respawnDelay: 1
+  startSpawned: 1
 --- !u!1 &765652406
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,10 +707,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xDistance: 2
   yDistance: 2
-  rowCount: 9
+  rowCount: 3
   columnCount: 9
   objectToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
   ChanceToSpawn: 1
+  spawnIterations: 2
+  respawnDelay: 5
+  startSpawned: 1
 --- !u!1 &896141922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1029,6 @@ MonoBehaviour:
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   PlayerStats: {fileID: 1329841977}
   PlayerCollision: {fileID: 1329841978}
-  Pathfinder: {fileID: 1443450986}
 --- !u!1 &1720969520
 GameObject:
   m_ObjectHideFlags: 0
