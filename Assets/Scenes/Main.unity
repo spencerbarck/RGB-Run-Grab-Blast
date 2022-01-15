@@ -687,7 +687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765652406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.78, y: -14.16, z: 0}
+  m_LocalPosition: {x: -10.3, y: -8.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1720969521}
@@ -705,13 +705,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5090347c8111db409538d85c875ff02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xDistance: 2
-  yDistance: 2
+  xDistance: 3
+  yDistance: 3
   rowCount: 3
-  columnCount: 9
+  columnCount: 3
   objectToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
   ChanceToSpawn: 1
-  spawnIterations: 2
+  spawnIterations: 1
   respawnDelay: 5
   startSpawned: 1
 --- !u!1 &896141922
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d6ac85dc042784bab5849ffba50cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 200
+  MaxHealth: 20000
   MinHealth: 50
 --- !u!1 &1443450984
 GameObject:

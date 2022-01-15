@@ -11,6 +11,8 @@ public class PlayerMover : CircleMovement
     private Camera playerCamera;
     Vector2 movement;
     Vector2 mousePosition;
+    Vector3 pushVector;
+    bool isPush;
 
     public void InitPlayerSpeed()
     {
@@ -19,6 +21,8 @@ public class PlayerMover : CircleMovement
         speed = GameManager.instance.PlayerStats.Speed * rgbToSpeedConversion;
         if(speed<MinSpeed)
             speed = MinSpeed;
+        
+        pushVector = Vector3.zero;
     }
     private void Update()
     {
@@ -32,12 +36,27 @@ public class PlayerMover : CircleMovement
 
     private void FixedUpdate()
     {
+        Vector2 moveAndSpeed = movement * speed;
+
+        //If pushed
+        moveAndSpeed.x += pushVector.x;
+        moveAndSpeed.y += pushVector.y;
+
+        pushVector = Vector3.Lerp(pushVector, Vector3.zero, 0.05f);
+
         //Move player
-        rigidBody.MovePosition(rigidBody.position + movement * speed * Time.fixedDeltaTime);
+        rigidBody.MovePosition(rigidBody.position + moveAndSpeed * Time.fixedDeltaTime);
 
         //Rotate to face mouse
         Vector2 lookDirection = mousePosition - rigidBody.position;
         float rotationAngle = -1 * Mathf.Atan2(lookDirection.x,lookDirection.y) * Mathf.Rad2Deg;
         rigidBody.rotation=rotationAngle;
+    }
+
+    public void Push(Vector3 pushDirection)
+    {
+        isPush = true;
+        pushVector = pushDirection;
+
     }
 }
