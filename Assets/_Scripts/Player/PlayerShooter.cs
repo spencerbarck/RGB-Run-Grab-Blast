@@ -13,11 +13,22 @@ public class PlayerShooter : MonoBehaviour
     private float projectileForce = 20f;
     [SerializeField]
     private CameraManager cameraManager;
+
+    private float shootDelayTime = 0.25f;
+    private float nextShot = 0f;
     private void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Time.time > nextShot)
         {
-            Shoot();
+            if(Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+                nextShot = Time.time + shootDelayTime;
+            }else
+            if(Input.GetMouseButton(0)){
+                Shoot();
+                nextShot = Time.time + shootDelayTime;
+            }
         }
     }
 
