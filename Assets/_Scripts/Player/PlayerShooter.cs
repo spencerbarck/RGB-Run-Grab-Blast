@@ -34,7 +34,7 @@ public class PlayerShooter : MonoBehaviour
 
     private void Shoot()
     {
-        cameraManager.ScreenShake((transform.position - firePoint.position).normalized, 1f, 0.05f);
+        cameraManager.ScreenShake((transform.position - firePoint.position).normalized, 0.05f, 0.1f);
         GameObject projectile = Instantiate(projectilePrefab,firePoint.position,firePoint.rotation);
         Rigidbody2D rigidBody = projectile.GetComponent<Rigidbody2D>();
         rigidBody.AddForce(firePoint.up * projectileForce, ForceMode2D.Impulse);

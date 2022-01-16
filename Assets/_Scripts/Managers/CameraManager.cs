@@ -5,9 +5,10 @@ using UnityEngine;
 public class CameraManager : MonoBehaviour
 {
     public Transform Player;
-    private Vector3 target, mousePosition, refVel, shakeOffset;
+    private Vector3 target, mousePosition, shakeOffset;
+    private Vector3 refVel = Vector3.zero;
     private float cameraDistance = 3.5f;
-    private float smoothTime = 0.2f;
+    private float smoothTime = 0f;
     private float zStart;
 
     float shakeMag, shakeTimeEnd;
@@ -16,13 +17,14 @@ public class CameraManager : MonoBehaviour
     //public Camera Camera;
     void Start()
     {
-        //Camera = GetComponent<Camera>();
         target = Player.position;
         zStart = transform.position.z;
     }
 
     void Update()
     {
+        //transform.position = new Vector3(Player.transform.position.x,Player.transform.position.y,-10);
+
         mousePosition = CaptureMousePosition();
 
         shakeOffset = UpdateShake();
@@ -48,7 +50,7 @@ public class CameraManager : MonoBehaviour
     Vector3 UpdateTargetPosition()
     {
         Vector3 mouseOffset = mousePosition * cameraDistance;
-        Vector3 position = Player.position + mouseOffset;
+        Vector3 position = Player.transform.position + mouseOffset;
         position += shakeOffset;
         position.z = zStart;
         return position;

@@ -36,19 +36,14 @@ public class PlayerMover : CircleMovement
 
     private void FixedUpdate()
     {
-        //Move player
-        Vector2 moveAndSpeed = movement * speed;
+        Vector2 moveNoForce = movement * speed;
+        
+        moveNoForce.x += pushDirection.x;
+        moveNoForce.y += pushDirection.y;
 
-        if(!isPush)
-        {
-            rigidBody.MovePosition(rigidBody.position + moveAndSpeed * Time.fixedDeltaTime);
-        }
-        else
-        {
-            Vector2 pushVector2 = new Vector2(pushDirection.x,pushDirection.y);
-            rigidBody.MovePosition(rigidBody.position + pushVector2 * Time.fixedDeltaTime);
-            isPush=false;
-        }
+        rigidBody.velocity = moveNoForce * Time.deltaTime * 50;
+        
+        pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, 1f);
         
         //Rotate to face mouse
         Vector2 lookDirection = mousePosition - rigidBody.position;

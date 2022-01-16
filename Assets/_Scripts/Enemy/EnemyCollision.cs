@@ -35,7 +35,7 @@ public class EnemyCollision : CircleCollision
             Damage dmg;
             dmg.damageAmount = damage;
             dmg.origin = transform.position;
-            dmg.pushForce = 100f;
+            dmg.pushForce = 60f;
             player.TakeDamage(dmg);
         }
     }
