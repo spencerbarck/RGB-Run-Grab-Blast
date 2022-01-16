@@ -27,7 +27,13 @@ public class Projectile : MonoBehaviour
         EnemyCollision enemy = collision.gameObject.GetComponent<EnemyCollision>();
 
         if(enemy != null)
-            enemy.TakeDamage(damage);
+        {
+            Damage dmg;
+            dmg.damageAmount = damage;
+            dmg.origin = transform.position;
+            dmg.pushForce = 2f;
+            enemy.TakeDamage(dmg);
+        }
 
         Destroy(gameObject);
     }

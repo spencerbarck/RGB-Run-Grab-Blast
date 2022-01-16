@@ -32,16 +32,11 @@ public class EnemyCollision : CircleCollision
         PlayerCollision player = collsion.gameObject.GetComponent<PlayerCollision>();
         if(player != null)
         {
-            player.TakeDamage(damage);
-            
-            PlayerMover playerMove = collsion.gameObject.GetComponent<PlayerMover>();
-            if(playerMove != null)
-            {
-                //Find Vector between enemy and player
-                pushDirection = (collsion.gameObject.GetComponent<Transform>().position - transform.position).normalized * 25f;
-                //Push the Player
-                playerMove.Push(pushDirection);
-            }
+            Damage dmg;
+            dmg.damageAmount = damage;
+            dmg.origin = transform.position;
+            dmg.pushForce = 100f;
+            player.TakeDamage(dmg);
         }
     }
 }

@@ -5,9 +5,13 @@ using UnityEngine;
 public class CircleCollision : MonoBehaviour
 {
     protected float health;
-    public void TakeDamage(float damage)
+    protected Damage dmg;
+    public virtual void TakeDamage(Damage damage)
     {
-        health -= damage;
+        dmg = damage;
+
+        health -= damage.damageAmount;
+        
         if(health<=0) Death();
     }
     protected void Death()

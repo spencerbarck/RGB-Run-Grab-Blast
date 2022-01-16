@@ -11,7 +11,7 @@ public class PlayerMover : CircleMovement
     private Camera playerCamera;
     Vector2 movement;
     Vector2 mousePosition;
-    Vector3 pushVector;
+    Vector3 pushDirection;
     bool isPush;
 
     public void InitPlayerSpeed()
@@ -22,7 +22,7 @@ public class PlayerMover : CircleMovement
         if(speed<MinSpeed)
             speed = MinSpeed;
         
-        pushVector = Vector3.zero;
+        pushDirection = Vector3.zero;
     }
     private void Update()
     {
@@ -36,27 +36,30 @@ public class PlayerMover : CircleMovement
 
     private void FixedUpdate()
     {
+        //Move player
         Vector2 moveAndSpeed = movement * speed;
 
-        //If pushed
-        moveAndSpeed.x += pushVector.x;
-        moveAndSpeed.y += pushVector.y;
-
-        pushVector = Vector3.Lerp(pushVector, Vector3.zero, 0.05f);
-
-        //Move player
-        rigidBody.MovePosition(rigidBody.position + moveAndSpeed * Time.fixedDeltaTime);
-
+        if(!isPush)
+        {
+            rigidBody.MovePosition(rigidBody.position + moveAndSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            Vector2 pushVector2 = new Vector2(pushDirection.x,pushDirection.y);
+            rigidBody.MovePosition(rigidBody.position + pushVector2 * Time.fixedDeltaTime);
+            isPush=false;
+        }
+        
         //Rotate to face mouse
         Vector2 lookDirection = mousePosition - rigidBody.position;
         float rotationAngle = -1 * Mathf.Atan2(lookDirection.x,lookDirection.y) * Mathf.Rad2Deg;
         rigidBody.rotation=rotationAngle;
     }
 
-    public void Push(Vector3 pushDirection)
+    public void Push(Vector3 pushOrigin,float force)
     {
         isPush = true;
-        pushVector = pushDirection;
-
+        Debug.Log("PUSH!");
+        pushDirection = (transform.position - pushOrigin).normalized * force;
     }
 }

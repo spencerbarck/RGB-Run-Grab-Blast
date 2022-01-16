@@ -97,8 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4133729b916b71a4ab6e9ccdd0dbe9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxXSize: 5
-  maxYSize: 5
+  maxXSize: 3
+  maxYSize: 3
+  isRandom: 0
 --- !u!61 &8615396730185881839
 BoxCollider2D:
   m_ObjectHideFlags: 0
