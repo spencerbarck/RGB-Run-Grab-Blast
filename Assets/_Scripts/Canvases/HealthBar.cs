@@ -29,6 +29,5 @@ public class HealthBar : MonoBehaviour
             CurrentHealth = 0f;
 
         healthBar.localScale = new Vector3(CurrentHealth/MaxHealth,1.0f,1.0f);
-        Debug.Log("Max Health "+ MaxHealth+ " Health "+CurrentHealth);
     }
 }

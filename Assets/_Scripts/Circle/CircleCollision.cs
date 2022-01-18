@@ -14,7 +14,7 @@ public class CircleCollision : MonoBehaviour
         
         if(health<=0) Death();
     }
-    protected void Death()
+    protected virtual void Death()
     {
         Destroy(gameObject);
     }

@@ -48,7 +48,7 @@
      <Compile Include="Assets\_Scripts\ObsticleGridUpdate.cs" />
      <Compile Include="Assets\_Scripts\Enemy\EnemyCollision.cs" />
      <Compile Include="Assets\_Scripts\Circle\CircleCollision.cs" />
-     <Compile Include="Assets\_Scripts\ObjectSpawner.cs" />
+     <Compile Include="Assets\_Scripts\Spawners\ObjectSpawner.cs" />
      <Compile Include="Assets\_Scripts\StartRandomColor.cs" />
      <Compile Include="Assets\_Scripts\Damage.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerCollision.cs" />
@@ -57,6 +57,9 @@
      <Compile Include="Assets\_Scripts\Projectile.cs" />
      <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Destructable.cs" />
+     <Compile Include="Assets\_Scripts\Spawners\EnemySpawner.cs" />
+     <Compile Include="Assets\_Scripts\Canvases\EnemiesLeftCount.cs" />
+     <Compile Include="Assets\_Scripts\Spawners\ObsticleSpawner.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

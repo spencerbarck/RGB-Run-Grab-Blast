@@ -39,4 +39,9 @@ public class EnemyCollision : CircleCollision
             player.TakeDamage(dmg);
         }
     }
+    protected override void Death()
+    {
+        base.Death();
+        GameManager.instance.RemoveEnemy();
+    }
 }

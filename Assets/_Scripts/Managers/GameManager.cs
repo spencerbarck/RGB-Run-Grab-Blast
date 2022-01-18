@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public Color playerColor;
     public PlayerStats PlayerStats;
     public PlayerCollision PlayerCollision;
+    public int enemyCount { get; private set; }  = 0;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -17,5 +18,14 @@ public class GameManager : MonoBehaviour
         }
 
         instance=this;
+    }
+
+    public void AddEnemies(int enemies)
+    {
+        enemyCount += enemies;
+    }
+    public void RemoveEnemy()
+    {
+        enemyCount --;
     }
 }
