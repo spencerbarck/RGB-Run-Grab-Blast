@@ -7,9 +7,9 @@ public class EnemyMover : CircleMovement
     public float MaxSpeed = 8f;
     public float MinSpeed = 2f;
     private float rgbToSpeedConversion;
-    Vector2 movement;
-    private float walkTimerTime = 3f;
-    private float walkTimer = 0f;
+
+    [SerializeField]
+    private Pathfinding.AIPath pathfinder;
     protected override void Start()
     {
         rgbToSpeedConversion = MaxSpeed/255;
@@ -17,20 +17,30 @@ public class EnemyMover : CircleMovement
 
         if(speed<MinSpeed)
             speed = MinSpeed;
+        
+        pathfinder.maxSpeed = speed;
 
         base.Start();
+        
     }
+    //Old movement
+    //Vector2 movement;
+    //private float walkTimerTime = 3f;
+    //private float walkTimer = 0f;
     private void Update()
     {
+        /*
         if(walkTimer<walkTimerTime)
         {
             walkTimer += Time.deltaTime;
-            //movement.x = 0.25f;
+            movement.x = 0.25f;
         }
-        else movement.x = 0f;
+        else movement.x = 0f;*/
     }
     private void FixedUpdate()
     {
-        //rigidBody.MovePosition(rigidBody.position + movement * speed * Time.fixedDeltaTime);
+        /*
+        rigidBody.MovePosition(rigidBody.position + movement * speed * Time.fixedDeltaTime);
+        */
     }
 }

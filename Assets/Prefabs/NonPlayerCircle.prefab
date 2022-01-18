@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 3844438597147154324}
-  minColor: 1
+  minColor: 2
 --- !u!60 &2884169993734486795
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeed: 8
   MinSpeed: 2
+  pathfinder: {fileID: -1316277733370199414}
 --- !u!50 &-7663428403629263583
 Rigidbody2D:
   serializedVersion: 4
@@ -263,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 5
   radius: 0.5
-  height: 2
+  height: 0.5
   canMove: 1
   maxSpeed: 3
   gravity: {x: NaN, y: NaN, z: NaN}

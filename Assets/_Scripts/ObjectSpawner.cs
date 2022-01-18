@@ -40,9 +40,9 @@ public class ObjectSpawner : MonoBehaviour
         
         currentPosition = startingPosition;
 
-        for(int i = 0; i < rowCount; i++)
+        for(int i = 0; i < columnCount; i++)
         {
-            for(int n = 0; n < columnCount; n++)
+            for(int n = 0; n < rowCount; n++)
             {
                 //Spawn object if not randomly stopped
                 float randSpawnCheck = Random.Range(0,1f);

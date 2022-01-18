@@ -25,4 +25,8 @@ public class PlayerCollision : CircleCollision
         base.TakeDamage(damage);
         PlayerMover.Push(dmg.origin,dmg.pushForce);
     }
+    public float GetHealth()
+    {
+        return health;
+    }
 }
