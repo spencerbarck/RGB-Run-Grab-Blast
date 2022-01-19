@@ -16,6 +16,8 @@ public class ObjectSpawner : MonoBehaviour
     private Vector3 currentPosition;
     [SerializeField]
     private GameObject objectToSpawn;
+    [SerializeField]
+    private GameObject objectToSpawn2;
     public float ChanceToSpawn = 1f;
     public int objectsSpawned { get; private set; } = 0;
 
@@ -39,6 +41,8 @@ public class ObjectSpawner : MonoBehaviour
 
     public void SpawnObjects()
     {
+        int headsOrTails = Random.Range(1,3);
+
         if(iterationsLeft<1) return;
         
         currentPosition = startingPosition;
@@ -51,6 +55,12 @@ public class ObjectSpawner : MonoBehaviour
                 float randSpawnCheck = Random.Range(0,1f);
                 if(randSpawnCheck+ChanceToSpawn>1f)
                 {
+                    if(objectToSpawn2!=null)
+                    {
+                        if(headsOrTails==1) Instantiate(objectToSpawn,currentPosition,Quaternion.identity);
+                        else Instantiate(objectToSpawn2,currentPosition,Quaternion.identity);
+                    }
+                    else
                     Instantiate(objectToSpawn,currentPosition,Quaternion.identity);
                     objectsSpawned++;
                 }

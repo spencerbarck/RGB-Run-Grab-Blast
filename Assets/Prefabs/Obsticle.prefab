@@ -138,4 +138,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c452373d9105a047933c199b5575f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obsticleCollider: {fileID: 8615396730185881839}
+  obsticleColliders:
+  - {fileID: 8615396730185881839}

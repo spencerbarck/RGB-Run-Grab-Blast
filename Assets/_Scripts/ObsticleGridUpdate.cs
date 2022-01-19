@@ -5,9 +5,10 @@ using UnityEngine;
 public class ObsticleGridUpdate : MonoBehaviour
 {
     [SerializeField]
-    private BoxCollider2D obsticleCollider;
+    private BoxCollider2D[] obsticleColliders;
     void Start()
     {
-        AstarPath.active.UpdateGraphs (obsticleCollider.bounds);
+        foreach(BoxCollider2D obsticle in obsticleColliders)
+            AstarPath.active.UpdateGraphs (obsticle.bounds);
     }
 }

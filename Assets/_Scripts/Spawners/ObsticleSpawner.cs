@@ -7,6 +7,6 @@ public class ObsticleSpawner : ObjectSpawner
     protected override void Start()
     {
         base.Start();
-        AstarPath.active.Scan();
+        //AstarPath.active.Scan();
     }
 }
