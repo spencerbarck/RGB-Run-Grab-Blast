@@ -261,12 +261,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &26642895
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,12 +317,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &67629771
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,12 +647,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &127746931
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,12 +858,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &178202071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,12 +1283,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &243082961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,12 +1663,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &287591653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,12 +1815,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &297810139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,12 +1871,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &299781948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,12 +2023,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &312924996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,12 +2463,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &369399514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2499,12 +2519,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &374180833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,12 +2575,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &427527485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,12 +2757,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &475353447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,12 +3097,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &634049657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3317,12 +3345,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &644637108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,12 +3401,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &685355941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,12 +3553,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &710516898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,12 +3844,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &726378544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3864,12 +3900,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &726682547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,12 +3956,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &740118136
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,12 +4108,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &765652406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,12 +4164,11 @@ MonoBehaviour:
   yDistance: 1
   rowCount: 2
   columnCount: 2
-  objectToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
-  objectToSpawn2: {fileID: 0}
   ChanceToSpawn: 1
   spawnIterations: 2
   respawnDelay: 7
   startSpawned: 1
+  enemyToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
 --- !u!1 &777442665
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,12 +4392,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &858184294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,12 +4873,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &896141922
 GameObject:
   m_ObjectHideFlags: 0
@@ -5010,12 +5055,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &930272752
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,12 +5207,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &982853496
 GameObject:
   m_ObjectHideFlags: 0
@@ -5406,12 +5455,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1016728822
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,12 +5511,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1026658746
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,12 +5836,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1083665790
 GameObject:
   m_ObjectHideFlags: 0
@@ -5933,12 +5988,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1129315644
 GameObject:
   m_ObjectHideFlags: 0
@@ -6149,12 +6206,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1245787547
 GameObject:
   m_ObjectHideFlags: 0
@@ -6299,12 +6358,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1312174572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6353,12 +6414,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1324020502
 GameObject:
   m_ObjectHideFlags: 0
@@ -6753,12 +6816,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1361916527
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,12 +6872,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1363812130
 GameObject:
   m_ObjectHideFlags: 0
@@ -7638,12 +7705,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1475002454
 GameObject:
   m_ObjectHideFlags: 0
@@ -7692,12 +7761,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1484298267
 GameObject:
   m_ObjectHideFlags: 0
@@ -7823,12 +7894,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1499470986
 GameObject:
   m_ObjectHideFlags: 0
@@ -7877,12 +7950,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1517514949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8301,12 +8376,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1650090732
 GameObject:
   m_ObjectHideFlags: 0
@@ -8497,12 +8574,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1712613934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9168,12 +9247,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1833886757
 GameObject:
   m_ObjectHideFlags: 0
@@ -9222,12 +9303,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1835990700
 GameObject:
   m_ObjectHideFlags: 0
@@ -9354,12 +9437,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1863871076
 GameObject:
   m_ObjectHideFlags: 0
@@ -9408,12 +9493,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1869693014
 GameObject:
   m_ObjectHideFlags: 0
@@ -9782,12 +9869,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1960518017
 GameObject:
   m_ObjectHideFlags: 0
@@ -9867,12 +9956,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1985035945
 GameObject:
   m_ObjectHideFlags: 0
@@ -9997,12 +10088,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &2028090164
 GameObject:
   m_ObjectHideFlags: 0
@@ -10417,12 +10510,14 @@ MonoBehaviour:
   yDistance: 5
   rowCount: 1
   columnCount: 1
-  objectToSpawn: {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  objectToSpawn2: {fileID: 6303211670743489613, guid: 69dab65c04c52004ab2442f75e7cf4ed, type: 3}
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
   startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &2075185687
 GameObject:
   m_ObjectHideFlags: 0

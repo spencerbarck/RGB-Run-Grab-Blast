@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class ObsticleSpawner : ObjectSpawner
 {
-    protected override void Start()
+    
+    [SerializeField]
+    private GameObject[] obsticlesToSpawn;
+    [SerializeField]
+    private float[] obsticleSpawnChance;
+    public override void SpawnObject(Vector3 position)
     {
-        base.Start();
-        //AstarPath.active.Scan();
+        int numberOfObsticles = obsticlesToSpawn.Length;
+        int objectChosen = Random.Range(0,numberOfObsticles);
+        
+        Instantiate(obsticlesToSpawn[objectChosen],position,Quaternion.identity);
     }
 }
