@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour
     public PlayerStats PlayerStats;
     public PlayerCollision PlayerCollision;
     public int enemyCount { get; private set; }  = 0;
-    public event Action buttonEvent;
     private bool battleStart = false;
+    [SerializeField]
+    private WaveButton waveButton;
+    [SerializeField]
+    private EnemiesLeftCount enemiesLeftCount;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -23,9 +26,22 @@ public class GameManager : MonoBehaviour
         instance=this;
     }
 
+    void Start()
+    {
+        waveButton.pressEvent += StartBattle;
+    }
+
+    private void StartBattle()
+    {
+        Debug.Log("BATTLE");
+        enemiesLeftCount.ShowCount();
+        if(!battleStart) battleStart = true;
+    }
+
     public void AddEnemies(int enemies)
     {
         enemyCount += enemies;
+        waveButton.pressEvent -= StartBattle;
     }
     public void RemoveEnemy()
     {

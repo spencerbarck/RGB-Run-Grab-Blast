@@ -11,6 +11,9 @@ public class WaveButton : MonoBehaviour
     [SerializeField]
     private float pressRange;
     private bool isPressed = false;
+
+    public delegate void PressEvent();
+    public event PressEvent pressEvent;
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E)&&Vector3.Distance(playerLocation.position,transform.position)<=pressRange)
@@ -24,6 +27,9 @@ public class WaveButton : MonoBehaviour
             {
                 isPressed = true;
                 buttonSprite.enabled=false;
+
+                if(pressEvent != null)
+                    pressEvent();
             }
         }
     }

@@ -54,7 +54,6 @@ public class PlayerMover : CircleMovement
     public void Push(Vector3 pushOrigin,float force)
     {
         isPush = true;
-        Debug.Log("PUSH!");
         pushDirection = (transform.position - pushOrigin).normalized * force;
     }
 }
