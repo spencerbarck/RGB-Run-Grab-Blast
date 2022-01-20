@@ -5,7 +5,7 @@ using UnityEngine;
 public class StartRandomColor : MonoBehaviour
 {
     [SerializeField]
-    SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
     public float minColor = 1;
     void Awake()
     {
@@ -18,6 +18,8 @@ public class StartRandomColor : MonoBehaviour
             g = Random.Range(0f,1f);
             b = Random.Range(0f,1f);
         }
+
         spriteRenderer.color = new Color(Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f),1f);
+        
     }
 }

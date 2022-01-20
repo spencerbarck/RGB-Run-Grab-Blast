@@ -8,6 +8,11 @@ public class ObsticleGridUpdate : MonoBehaviour
     private BoxCollider2D[] obsticleColliders;
     void Start()
     {
+        UpdateGraphs();
+    }
+
+    public void UpdateGraphs()
+    {
         foreach(BoxCollider2D obsticle in obsticleColliders)
             AstarPath.active.UpdateGraphs(obsticle.bounds);
     }

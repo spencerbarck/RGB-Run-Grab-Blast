@@ -60,6 +60,7 @@
      <Compile Include="Assets\_Scripts\Canvases\EnemiesLeftCount.cs" />
      <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Destructable.cs" />
+     <Compile Include="Assets\_Scripts\StartRGOrB.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

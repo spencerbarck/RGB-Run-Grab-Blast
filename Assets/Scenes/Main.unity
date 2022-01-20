@@ -268,6 +268,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &26642895
 GameObject:
@@ -324,6 +333,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &67629771
 GameObject:
@@ -503,6 +521,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &80831313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80831314}
+  - component: {fileID: 80831316}
+  - component: {fileID: 80831315}
+  m_Layer: 0
+  m_Name: Vanish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &80831314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80831313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1827803699}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &80831315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80831313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279fce90bca0af54bacb9a12ea347d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 80831316}
+--- !u!212 &80831316
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80831313}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &87101407
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +768,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &127746931
 GameObject:
@@ -865,6 +988,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &178202071
 GameObject:
@@ -1235,62 +1367,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &239854075
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 239854076}
-  - component: {fileID: 239854077}
-  m_Layer: 0
-  m_Name: ObsticleSpawner (30)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &239854076
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239854075}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1365530925}
-  m_Father: {fileID: 1835990701}
-  m_RootOrder: 30
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &239854077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239854075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16bd9af151a13604188324e5c69a6d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xDistance: 5
-  yDistance: 5
-  rowCount: 1
-  columnCount: 1
-  ChanceToSpawn: 1
-  spawnIterations: 1
-  respawnDelay: 1
-  startSpawned: 1
-  obsticlesToSpawn:
-  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
-  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
-  obsticleSpawnChance: []
 --- !u!1 &243082961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,7 +1721,7 @@ Transform:
   m_Children:
   - {fileID: 446715015}
   m_Father: {fileID: 1835990701}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &277073070
 MonoBehaviour:
@@ -1670,6 +1746,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &287591653
 GameObject:
@@ -1822,6 +1907,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &297810139
 GameObject:
@@ -1878,6 +1972,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &299781948
 GameObject:
@@ -2030,6 +2133,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &312924996
 GameObject:
@@ -2470,6 +2582,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &369399514
 GameObject:
@@ -2526,6 +2647,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &374180833
 GameObject:
@@ -2582,6 +2712,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &427527485
 GameObject:
@@ -2609,7 +2748,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1172868976}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2764,6 +2904,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &475353447
 GameObject:
@@ -2791,7 +2940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475353447}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalPosition: {x: 47.2, y: 0, z: 0}
   m_LocalScale: {x: 80, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1901200827}
@@ -3104,6 +3253,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &634049657
 GameObject:
@@ -3352,6 +3510,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &644637108
 GameObject:
@@ -3408,6 +3575,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &685355941
 GameObject:
@@ -3560,6 +3736,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &710516898
 GameObject:
@@ -3851,6 +4036,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &726378544
 GameObject:
@@ -3882,7 +4076,7 @@ Transform:
   m_Children:
   - {fileID: 819209636}
   m_Father: {fileID: 1835990701}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &726378546
 MonoBehaviour:
@@ -3907,6 +4101,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &726682547
 GameObject:
@@ -3963,6 +4166,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &740118136
 GameObject:
@@ -4090,7 +4302,7 @@ Transform:
   m_Children:
   - {fileID: 982853497}
   m_Father: {fileID: 1835990701}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &762647801
 MonoBehaviour:
@@ -4115,6 +4327,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &765652406
 GameObject:
@@ -4141,7 +4362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765652406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19, y: -19, z: 0}
+  m_LocalPosition: {x: -18.2, y: -18.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 881502401}
@@ -4374,7 +4595,7 @@ Transform:
   m_Children:
   - {fileID: 1906715176}
   m_Father: {fileID: 1835990701}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &844732282
 MonoBehaviour:
@@ -4399,6 +4620,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &858184294
 GameObject:
@@ -4633,6 +4863,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871266692}
   m_CullTransparentMesh: 1
+--- !u!1 &876811281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876811282}
+  - component: {fileID: 876811283}
+  m_Layer: 0
+  m_Name: ObsticleSpawner (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &876811282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876811281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1254435198}
+  m_Father: {fileID: 1835990701}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &876811283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876811281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bd9af151a13604188324e5c69a6d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xDistance: 5
+  yDistance: 5
+  rowCount: 1
+  columnCount: 1
+  ChanceToSpawn: 1
+  spawnIterations: 1
+  respawnDelay: 1
+  startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
+  - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &881502400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,6 +5175,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &896141922
 GameObject:
@@ -5062,6 +5366,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &930272752
 GameObject:
@@ -5214,6 +5527,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &982853496
 GameObject:
@@ -5462,6 +5784,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1016728822
 GameObject:
@@ -5518,6 +5849,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1026658746
 GameObject:
@@ -5843,6 +6183,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1083665790
 GameObject:
@@ -5995,6 +6344,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1129315644
 GameObject:
@@ -6151,12 +6509,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172868973}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 427527486}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198783888
 GameObject:
@@ -6213,6 +6571,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1245787547
 GameObject:
@@ -6266,6 +6633,102 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245787547}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 0.984375, y: 0.984375}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1254435197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254435198}
+  - component: {fileID: 1254435200}
+  - component: {fileID: 1254435199}
+  m_Layer: 0
+  m_Name: Vanish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1254435198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254435197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 876811282}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1254435199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254435197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279fce90bca0af54bacb9a12ea347d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1254435200}
+--- !u!212 &1254435200
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254435197}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -6365,6 +6828,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1312174572
 GameObject:
@@ -6421,6 +6893,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1324020502
 GameObject:
@@ -6798,7 +7279,7 @@ Transform:
   m_Children:
   - {fileID: 891434912}
   m_Father: {fileID: 1835990701}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1337984516
 MonoBehaviour:
@@ -6823,6 +7304,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1361916527
 GameObject:
@@ -6879,6 +7369,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1363812130
 GameObject:
@@ -6957,102 +7456,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363812130}
   m_CullTransparentMesh: 1
---- !u!1 &1365530924
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1365530925}
-  - component: {fileID: 1365530927}
-  - component: {fileID: 1365530926}
-  m_Layer: 0
-  m_Name: Vanish
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1365530925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365530924}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
-  m_Children: []
-  m_Father: {fileID: 239854076}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1365530926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365530924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 279fce90bca0af54bacb9a12ea347d29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1365530927}
---- !u!212 &1365530927
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365530924}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 0, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 0.984375, y: 0.984375}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1370398877
 GameObject:
   m_ObjectHideFlags: 0
@@ -7383,7 +7786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACQn+vau749XQIAABQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk3GJBAnvbWGkB5ImJBOLr4o0hprkCWPPvhIhv/elWxjl05PiPfe7r5drfxFhLI1MKfNwgi+1BzI9xEJZ/Jt1JNPcKAbrdbiEzrNu+CuDCIaNa/UCY34OIRZXYEzgv1QGxnECYJeiUKbas43kGnrLMIFlRaQMtqFaIXQ14gc8OfqIYQc8XSThtMnnh6S0QmPDJQD00s7YSdrVF4xSasaeLDci9Npq06nUaawmVYRjDMtpbCtE+KOdew0o7X12AcKuKDYWSw/vr5FoASxKV3wOQx/KQoLrjVl6HEmDI6oyUt+6mZuFbXbxtmOSh8q3U2iqSbn8h/6ahzpwujqqSs7TkIJVwq2faVHRq0bzHUIzwbO43z2VG7ph4T3EtSzXhjtFUfSGR9CvYWbWf/33FlWAtv2eGP1AvT1/28n9HCKzR8yKaqPQF1PGmAtdRx4vHsweDW/0HDcDNumQDS4+G3hjW6GK9QSj8JYh1TbpQr2PrQ3QUrmcWahG+8ybRREuDVdg6LSHVeYxl3e4AU3KHvBPNLwWNriLde9gYuQCPf6JLmgVnp/vixb6v0SbPninRQKetOBeMY5ZVqpZsGGM+nC1t4UlA3CNl7wv1eLFLdpck9Zesfu05Qnk6t74EVSsHQ8TdhNSick7p5Q2CeVq8ZoOx68NdUnV7hn3TdktDC0jsvODd0vxGelhwaFKvSaGQD10qQ4OweDVfBd8jkXOKE1OCdUvHDylROp2RZ4fq6Zx1bnB2do3mfJSS122gUkJ1n8auQkwOdlXhnYCdiH4l2yEzn9AVBLAwQUAAAICAAAkJ/rTJG1Ym0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UpqxuYFFYrK5WbKFuXmKgYmuRWpKmkFasrmhqUGykXmiiVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAkJ/r2ru+PV0CAAAUBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAkJ/rTJG1Ym0AAAB4AAAACQAkAAAAAAAAAAAAAACqAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGIDAAAAAA==
+    dataString: UEsDBBQAAAgIAACQn+tE4eWHXAIAABQFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VEtz2jAQ/iuMzk3HUBInvbUOIT0kMCGdXHwR0hprkCWPHrwy/PeuZBu7dHpi+fbb3W8f8icRytbAnDZzI/iL5kC+j0iwyZdR73yGA91otRIn6DgfgrsykGjkvFEnNOLjEGZ1Bc4I9kNtZCAnCHolCm2qGd9Apq2zCBdUWkCX0S5EK4Q+R+SAPzcPIeSI1iQN1gmth2R0RpOBcmB6akfsaA3LKyZpVQMPkntyetuy09tIU9hMywjCmZZS2FYJccc6dprR2nrsAwlcUOwslk++hlwliE3pgs5h+KIoLLhWlKHHR2FwRE1e8lM3c6uo3TbKdlT6UOluGkU1OV/+cd+Mo7swunruyo6TUMKVgm3f6JFR6wZzHcKPvfJxnM+eyi1dS/goQb3qudFecXQ640OotzB57P9eOstKYNseb6Regb7+/3ZCD+fY/CGTolrHQU4bYCV1HHjcPRhczS8UHC/DtikQDSp+W3inm+EJtY4nYaxDV9ulCvLW2ptAJbM4s9CNd5k2CiLciq5BUemOS0zjrjd45RuUvfI80fBY2uKtr3sDVyER7vlJcuVa6v1lWbbU+xew5cI7KRT0ooPjFeeUaaWaAxvOpAtbeVNQNgjbeMH/Pi1SfEuTe8rSO3afpjyZ3twDL5KCpePbhE1SOiXx9oTCPqlcNkLb8eDWVJ9c4Z1135DR3NA6Hjs3dD8Xp0oPBQpV6BUzAGrRpLgoB4NV8F3yGRc4oRU4J1RcOPnMidRsCzy/1Mxjq7ODMzTvs+SkFjvtApKTLH41chLgyzEvDewE7EPxLtmZnP8AUEsDBBQAAAgIAACQn+tMkbVibQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSmrG5gUVisrlZsoW5eYqBia5FakqaQVqyuaGpQbKReaKJUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACQn+tE4eWHXAIAABQFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACQn+tMkbVibQAAAHgAAAAJACQAAAAAAAAAAAAAAKkCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAYQMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -7712,6 +8115,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1475002454
 GameObject:
@@ -7768,6 +8180,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1484298267
 GameObject:
@@ -7901,6 +8322,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1499470986
 GameObject:
@@ -7957,6 +8387,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1517514949
 GameObject:
@@ -8383,6 +8822,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1650090732
 GameObject:
@@ -8581,6 +9029,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1712613934
 GameObject:
@@ -8709,6 +9166,7 @@ Transform:
   - {fileID: 765652407}
   - {fileID: 1443450985}
   - {fileID: 1835990701}
+  - {fileID: 1827803699}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9254,7 +9712,69 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
+--- !u!1 &1827803698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1827803699}
+  - component: {fileID: 1827803700}
+  m_Layer: 0
+  m_Name: EnemySpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1827803699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827803698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: -18.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 80831314}
+  m_Father: {fileID: 1720969521}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1827803700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827803698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be223af7031cf1e4e9a0b08103847689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xDistance: 1
+  yDistance: 1
+  rowCount: 2
+  columnCount: 2
+  ChanceToSpawn: 1
+  spawnIterations: 2
+  respawnDelay: 7
+  startSpawned: 1
+  enemyToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
 --- !u!1 &1833886757
 GameObject:
   m_ObjectHideFlags: 0
@@ -9310,6 +9830,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1835990700
 GameObject:
@@ -9362,13 +9891,13 @@ Transform:
   - {fileID: 1016728823}
   - {fileID: 1622180166}
   - {fileID: 1468846723}
+  - {fileID: 876811282}
   - {fileID: 277073069}
   - {fileID: 762647800}
   - {fileID: 1841459798}
   - {fileID: 726378545}
   - {fileID: 1337984515}
   - {fileID: 844732281}
-  - {fileID: 239854076}
   - {fileID: 1005521302}
   - {fileID: 1682933731}
   - {fileID: 1976860497}
@@ -9419,7 +9948,7 @@ Transform:
   m_Children:
   - {fileID: 1570323234}
   m_Father: {fileID: 1835990701}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1841459799
 MonoBehaviour:
@@ -9444,6 +9973,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1863871076
 GameObject:
@@ -9500,6 +10038,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1869693014
 GameObject:
@@ -9876,6 +10423,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1960518017
 GameObject:
@@ -9963,6 +10519,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &1985035945
 GameObject:
@@ -10095,6 +10660,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &2028090164
 GameObject:
@@ -10517,6 +11091,15 @@ MonoBehaviour:
   obsticlesToSpawn:
   - {fileID: 4920612903000782050, guid: ebac8e8e04d84644487b9ff8b343fdfd, type: 3}
   - {fileID: 5233222433727159560, guid: d92d87f3cfa3d3541b0b7f8eff77e389, type: 3}
+  - {fileID: 825723077275770387, guid: 81db92d740cb45a4e96273c0b1c33de2, type: 3}
+  - {fileID: 3994162091015677823, guid: 19c7bd568be3abc46b30356a080106fe, type: 3}
+  - {fileID: 8093108309945708508, guid: 63dd6073b88944c47a9921a77d18d4f5, type: 3}
+  - {fileID: 2453034292788130318, guid: 4879405cad2eb2549b3b16bf42152924, type: 3}
+  - {fileID: 6784992177170511655, guid: 33ef5860423c04246b73f790c219682f, type: 3}
+  - {fileID: 4687554746115232513, guid: 8018138a0a8b7d64b8425c6eb5cd6a06, type: 3}
+  - {fileID: 1015539701508556053, guid: 6343db5ad8b3eb7439f213e20fdb23e4, type: 3}
+  - {fileID: 924892060453561562, guid: 58a9531107e2b8a4bbbf35a9442c474b, type: 3}
+  - {fileID: 8830405159423241181, guid: 57aa3bad3a6a74d4ead913baf148e8bc, type: 3}
   obsticleSpawnChance: []
 --- !u!1 &2075185687
 GameObject:
