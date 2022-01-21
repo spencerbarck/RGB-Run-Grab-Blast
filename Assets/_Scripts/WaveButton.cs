@@ -29,7 +29,10 @@ public class WaveButton : MonoBehaviour
                 buttonSprite.enabled=false;
 
                 if(pressEvent != null)
-                    pressEvent();
+                {
+                    pressEvent.Invoke();
+                    GameManager.instance.StartBattle();
+                }
             }
         }
     }
