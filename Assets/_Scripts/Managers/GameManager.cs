@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public WaveButton waveButton;
     [SerializeField]
     private EnemiesLeftCount enemiesLeftCount;
+    [SerializeField]
+    private DeathScreen deathScreen;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -53,5 +55,9 @@ public class GameManager : MonoBehaviour
     public void RemoveEnemy()
     {
         enemyCount --;
+    }
+    public void Death()
+    {
+        deathScreen.ShowDeathScreen();
     }
 }

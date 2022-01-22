@@ -29,4 +29,10 @@ public class PlayerCollision : CircleCollision
     {
         return health;
     }
+
+    protected override void Death()
+    {
+        GameManager.instance.Death();
+        base.Death();
+    }
 }
