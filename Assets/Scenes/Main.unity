@@ -1017,6 +1017,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181463541}
   m_CullTransparentMesh: 1
+--- !u!1 &250510872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250510873}
+  - component: {fileID: 250510874}
+  m_Layer: 0
+  m_Name: PickupSpawner (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &250510873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250510872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 7.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 414010522}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250510874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250510872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bd9af151a13604188324e5c69a6d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xDistance: 5
+  yDistance: 5
+  rowCount: 3
+  columnCount: 1
+  ChanceToSpawn: 1
+  spawnIterations: 1
+  respawnDelay: 1
+  startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &257113003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1535,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1229378876}
+  - {fileID: 1778128558}
+  - {fileID: 1581618324}
+  - {fileID: 1257955581}
+  - {fileID: 1725181231}
+  - {fileID: 250510873}
   m_Father: {fileID: 732911378}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1678,7 +1737,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3257,8 +3316,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xDistance: 5
   yDistance: 5
-  rowCount: 10
+  rowCount: 8
   columnCount: 3
+  ChanceToSpawn: 1
+  spawnIterations: 1
+  respawnDelay: 1
+  startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
+  obsticleSpawnChance: []
+--- !u!1 &1257955580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257955581}
+  - component: {fileID: 1257955582}
+  m_Layer: 0
+  m_Name: PickupSpawner (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1257955581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257955580}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5, y: -17.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 414010522}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1257955582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257955580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bd9af151a13604188324e5c69a6d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xDistance: 5
+  yDistance: 5
+  rowCount: 3
+  columnCount: 1
   ChanceToSpawn: 1
   spawnIterations: 1
   respawnDelay: 1
@@ -4315,6 +4428,60 @@ Transform:
   m_Father: {fileID: 732911378}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1581618323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581618324}
+  - component: {fileID: 1581618325}
+  m_Layer: 0
+  m_Name: PickupSpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1581618324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581618323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5, y: -17.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 414010522}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1581618325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581618323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bd9af151a13604188324e5c69a6d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xDistance: 5
+  yDistance: 5
+  rowCount: 3
+  columnCount: 1
+  ChanceToSpawn: 1
+  spawnIterations: 1
+  respawnDelay: 1
+  startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1649973016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4629,6 +4796,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1725181230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725181231}
+  - component: {fileID: 1725181232}
+  m_Layer: 0
+  m_Name: PickupSpawner (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1725181231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725181230}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.5, y: 7.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 414010522}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1725181232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725181230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bd9af151a13604188324e5c69a6d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xDistance: 5
+  yDistance: 5
+  rowCount: 3
+  columnCount: 1
+  ChanceToSpawn: 1
+  spawnIterations: 1
+  respawnDelay: 1
+  startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1727703540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4815,6 +5036,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1778128557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1778128558}
+  - component: {fileID: 1778128559}
+  m_Layer: 0
+  m_Name: PickupSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1778128558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778128557}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.5, y: -17.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 414010522}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1778128559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778128557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16bd9af151a13604188324e5c69a6d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xDistance: 5
+  yDistance: 5
+  rowCount: 8
+  columnCount: 3
+  ChanceToSpawn: 1
+  spawnIterations: 1
+  respawnDelay: 1
+  startSpawned: 1
+  obsticlesToSpawn:
+  - {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
+  obsticleSpawnChance: []
 --- !u!1 &1792509650
 GameObject:
   m_ObjectHideFlags: 0
