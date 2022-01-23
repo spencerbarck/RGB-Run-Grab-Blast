@@ -13,8 +13,7 @@ public class PlayerMover : CircleMovement
     Vector2 mousePosition;
     Vector3 pushDirection;
     bool isPush;
-
-    public void InitPlayerSpeed()
+    public void SetPlayerSpeed()
     {
         rgbToSpeedConversion = MaxSpeed/255;
 
@@ -38,14 +37,19 @@ public class PlayerMover : CircleMovement
     {
         Vector2 moveNoForce = movement * speed;
         
+        //Apply push direction
         moveNoForce.x += pushDirection.x;
         moveNoForce.y += pushDirection.y;
 
         rigidBody.velocity = moveNoForce * Time.deltaTime * 50;
         
         pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, 1f);
-        
-        //Rotate to face mouse
+
+        PlayerSpriteFaceMouse();
+    }
+
+    private void PlayerSpriteFaceMouse()
+    {
         Vector2 lookDirection = mousePosition - rigidBody.position;
         float rotationAngle = -1 * Mathf.Atan2(lookDirection.x,lookDirection.y) * Mathf.Rad2Deg;
         rigidBody.rotation=rotationAngle;

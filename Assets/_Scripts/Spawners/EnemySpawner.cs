@@ -17,11 +17,10 @@ public class EnemySpawner : ObjectSpawner
         waveButton.pressEvent += StartSpawning;
         
         base.Start();
-
-        GameManager.instance.AddEnemies(rowCount*columnCount*spawnIterations);
     }
     public override void SpawnObject(Vector3 position)
     {
+        GameManager.instance.AddEnemies(1);
         Instantiate(enemyToSpawn,position,Quaternion.identity);
     }
 

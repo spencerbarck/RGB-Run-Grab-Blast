@@ -6,17 +6,27 @@ using System;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public Color playerColor;
+
+    //References
+    //
+    //Player Stats
     public PlayerStats PlayerStats;
     public PlayerCollision PlayerCollision;
-    public int enemyCount { get; private set; }  = 0;
-    private bool battleStart = false;
+    public PlayerMover PlayerMover;
+    //UI
     [SerializeField]
     public WaveButton waveButton;
     [SerializeField]
     private EnemiesLeftCount enemiesLeftCount;
     [SerializeField]
+    private HealthBar healthBar;
+    [SerializeField]
     private DeathScreen deathScreen;
+    //
+
+    //Values
+    public Color PlayerColor;
+    public int enemyCount { get; private set; }  = 0;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -24,39 +34,38 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
-
         instance=this;
-        
-    }
-    void Start()
-    {
-        //waveButton.pressEvent += StartBattle;
     }
 
+    private void Start()
+    {
+        SetPlayerStats();
+    }
+    private void SetPlayerStats()
+    {
+        PlayerCollision.SetPlayerHealth();
+        healthBar.SetMax();
+        PlayerMover.SetPlayerSpeed();
+    }
     public void StartBattle()
     {
-        //waveButton.pressEvent -= StartBattle;
-        
         //Update UI
         enemiesLeftCount.ShowCount();
 
         //Set Player Stats
-        playerColor = PlayerStats.circleSpriteRenderer.color;
+        PlayerColor = PlayerStats.circleSpriteRenderer.color;
 
-        if(!battleStart) battleStart = true;
+        SetPlayerStats();
     }
-
     public void AddEnemies(int enemies)
     {
         enemyCount += enemies;
-        waveButton.pressEvent -= StartBattle;
     }
     public void RemoveEnemy()
     {
         enemyCount --;
     }
-    public void Death()
+    public void DisplayDeath()
     {
         deathScreen.ShowDeathScreen();
     }

@@ -16,6 +16,11 @@ public class HealthBar : MonoBehaviour
 
     private void Start()
     {
+        SetMax();
+    }
+
+    public void SetMax()
+    {
         MaxHealth = PlayerCollision.GetHealth();
     }
 

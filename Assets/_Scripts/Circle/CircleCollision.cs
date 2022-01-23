@@ -9,9 +9,7 @@ public class CircleCollision : MonoBehaviour
     public virtual void TakeDamage(Damage damage)
     {
         dmg = damage;
-
         health -= damage.damageAmount;
-        
         if(health<=0) Death();
     }
     protected virtual void Death()

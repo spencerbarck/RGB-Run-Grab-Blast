@@ -9,8 +9,7 @@ public class PlayerCollision : CircleCollision
     private float rgbToHealthConversion;
     [SerializeField]
     private PlayerMover PlayerMover;
-
-    public void InitPlayerHealth()
+    public void SetPlayerHealth()
     {
         rgbToHealthConversion = MaxHealth/255;
 
@@ -19,7 +18,6 @@ public class PlayerCollision : CircleCollision
         if(health<MinHealth)
             health = MinHealth;
     }
-
     public override void TakeDamage(Damage damage)
     {
         base.TakeDamage(damage);
@@ -29,10 +27,9 @@ public class PlayerCollision : CircleCollision
     {
         return health;
     }
-
     protected override void Death()
     {
-        GameManager.instance.Death();
+        GameManager.instance.DisplayDeath();
         base.Death();
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 446229123095716111}
   - component: {fileID: -7927353662230043839}
   - component: {fileID: 1648363638333174222}
-  - component: {fileID: 7147473456393332453}
+  - component: {fileID: 9067848487794631936}
   m_Layer: 0
   m_Name: PlayerProjectile
   m_TagString: Untagged
@@ -173,7 +173,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7147473456393332453
+--- !u!114 &9067848487794631936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 446229123095716097}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd1c4cb2234dcb24590ed3d9854193b3, type: 3}
+  m_Script: {fileID: 11500000, guid: efb0437694a2f0f4ca513b3a4b89da1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDamage: 100
-  MinDamage: 25
+  MaxDamage: 50
+  MinDamage: 12.5
