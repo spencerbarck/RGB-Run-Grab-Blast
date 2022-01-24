@@ -20,11 +20,13 @@ public class PlayerShooter : MonoBehaviour
         {
             if(Input.GetButtonDown("Fire1"))
             {
-                Shoot();
+                if(GameManager.instance.BattleStarted)
+                    Shoot();
                 nextShot = Time.time + shootDelayTime;
             }else
             if(Input.GetMouseButton(0)){
-                Shoot();
+                if(GameManager.instance.BattleStarted)
+                    Shoot();
                 nextShot = Time.time + shootDelayTime;
             }
         }

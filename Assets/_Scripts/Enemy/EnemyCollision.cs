@@ -12,8 +12,11 @@ public class EnemyCollision : CircleCollision
     public float damageValue;
     private float rgbToDamageConversion;
     private Vector3 pushDirection;
+    private Collider2D enemyCollider2D;
     private void Start()
     { 
+        enemyCollider2D = GetComponent<Collider2D>();
+
         rgbToHealthConversion = MaxHealth/255;
         health = GetComponent<SpriteRenderer>().color.r * 255 * rgbToHealthConversion;
         rgbToDamageConversion = MaxDamage/255;
@@ -24,6 +27,11 @@ public class EnemyCollision : CircleCollision
     }
     private void OnCollisionEnter2D(Collision2D collsion)
     {
+        if(collsion.gameObject.layer == LayerMask.NameToLayer("OutOfBounds")||collsion.gameObject.layer == LayerMask.NameToLayer("Pickup"))
+        {
+            Physics2D.IgnoreCollision(collsion.gameObject.GetComponent<Collider2D>(),enemyCollider2D);
+        }
+
         //Damage the player
         PlayerCollision player = collsion.gameObject.GetComponent<PlayerCollision>();
         if(player != null)

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -7927353662230043839}
   - component: {fileID: 1648363638333174222}
   - component: {fileID: 9067848487794631936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 446229123095716097}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ef3aea91e918e4744846334eaebc40a3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -166,12 +166,12 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &9067848487794631936
 MonoBehaviour:

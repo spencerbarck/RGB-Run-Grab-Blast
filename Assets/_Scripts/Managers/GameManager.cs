@@ -25,8 +25,9 @@ public class GameManager : MonoBehaviour
     //
 
     //Values
+    public bool BattleStarted = false;
     public Color PlayerColor;
-    public int enemyCount { get; private set; }  = 0;
+    public int EnemyCount = 0;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -49,6 +50,9 @@ public class GameManager : MonoBehaviour
     }
     public void StartBattle()
     {
+        if(BattleStarted==false)
+            BattleStarted = true;
+
         //Update UI
         enemiesLeftCount.ShowCount();
 
@@ -59,11 +63,11 @@ public class GameManager : MonoBehaviour
     }
     public void AddEnemies(int enemies)
     {
-        enemyCount += enemies;
+        EnemyCount += enemies;
     }
     public void RemoveEnemy()
     {
-        enemyCount --;
+        EnemyCount --;
     }
     public void DisplayDeath()
     {

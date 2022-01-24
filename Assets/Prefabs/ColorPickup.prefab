@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8980913893815318692}
   - component: {fileID: 8980913893815318747}
   - component: {fileID: 4426991641847407603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ColorPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,4 +138,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupSprite: {fileID: 8980913893815318694}
   pickupValue: 0.125
-  waveButton: {fileID: 0}

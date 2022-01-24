@@ -16,7 +16,7 @@ public class EnemiesLeftCount : MonoBehaviour
     }
     void Update()
     {
-        healthText.text=GameManager.instance.enemyCount.ToString();
+        healthText.text=GameManager.instance.EnemyCount.ToString();
     }
 
     public void ShowCount()

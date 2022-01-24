@@ -14,17 +14,17 @@ public class CameraManager : MonoBehaviour
     float shakeMag, shakeTimeEnd;
     Vector3 shakeVector;
     bool isShaking;
-    //public Camera Camera;
+    private Camera MainCamera;
     void Start()
     {
         target = Player.position;
         zStart = transform.position.z;
+
+        MainCamera = Camera.main;
     }
 
     void Update()
     {
-        //transform.position = new Vector3(Player.transform.position.x,Player.transform.position.y,-10);
-
         mousePosition = CaptureMousePosition();
 
         shakeOffset = UpdateShake();
@@ -32,6 +32,12 @@ public class CameraManager : MonoBehaviour
         target = UpdateTargetPosition();
 
         UpdateCameraPosition();
+
+        //Camera Zoom
+        if(((MainCamera.orthographicSize<30f)||(Input.GetAxis("Mouse ScrollWheel")>0))&&
+            ((MainCamera.orthographicSize>5f)||(Input.GetAxis("Mouse ScrollWheel")<0)))
+            MainCamera.orthographicSize -= Input.GetAxis("Mouse ScrollWheel") * 10f;
+
     }
 
     Vector3 CaptureMousePosition(){

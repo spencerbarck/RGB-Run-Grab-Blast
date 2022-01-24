@@ -12,7 +12,7 @@ public class ColorPickup : MonoBehaviour
     void Start()
     {
         waveButton=GameManager.instance.waveButton;
-        waveButton.pressEvent += RemovePickup;
+        //waveButton.pressEvent += RemovePickup;
     }
     private void OnCollisionEnter2D(Collision2D collsion)
     {
