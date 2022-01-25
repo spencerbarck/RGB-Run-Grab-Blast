@@ -15,8 +15,7 @@ public class EnemyMover : CircleMovement
         rgbToSpeedConversion = MaxSpeed/255;
         speed = GetComponent<SpriteRenderer>().color.g * 255 * rgbToSpeedConversion;
 
-        if(speed<MinSpeed)
-            speed = MinSpeed;
+        speed += MinSpeed;
         
         pathfinder.maxSpeed = speed;
 

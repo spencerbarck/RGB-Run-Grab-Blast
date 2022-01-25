@@ -38,6 +38,7 @@ public class ColorPickup : MonoBehaviour
                 newColor = new Color(0f,0f,0f);
 
             player.UpdateStats(newColor);
+            GameManager.instance.ChangePlayerStats(pickupSprite.color.r);
             RemovePickup();
         }
     }

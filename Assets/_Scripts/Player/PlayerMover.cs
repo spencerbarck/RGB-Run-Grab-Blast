@@ -18,8 +18,7 @@ public class PlayerMover : CircleMovement
         rgbToSpeedConversion = MaxSpeed/255;
 
         speed = GameManager.instance.PlayerStats.Speed * rgbToSpeedConversion;
-        if(speed<MinSpeed)
-            speed = MinSpeed;
+        speed += MinSpeed;
         
         pushDirection = Vector3.zero;
     }
@@ -47,17 +46,19 @@ public class PlayerMover : CircleMovement
 
         PlayerSpriteFaceMouse();
     }
-
     private void PlayerSpriteFaceMouse()
     {
         Vector2 lookDirection = mousePosition - rigidBody.position;
         float rotationAngle = -1 * Mathf.Atan2(lookDirection.x,lookDirection.y) * Mathf.Rad2Deg;
         rigidBody.rotation=rotationAngle;
     }
-
     public void Push(Vector3 pushOrigin,float force)
     {
         isPush = true;
         pushDirection = (transform.position - pushOrigin).normalized * force;
+    }
+    public float GetSpeed()
+    {
+        return speed;
     }
 }

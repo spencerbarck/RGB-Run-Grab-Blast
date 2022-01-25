@@ -10,7 +10,7 @@ public class DeathScreen : MonoBehaviour
     {
 
         startingPosition = transform.position;
-        transform.position = new Vector3(transform.position.x,transform.position.y+600f,transform.position.z);
+        transform.position = new Vector3(transform.position.x,transform.position.y+900f,transform.position.z);
     }
 
     public void ShowDeathScreen()

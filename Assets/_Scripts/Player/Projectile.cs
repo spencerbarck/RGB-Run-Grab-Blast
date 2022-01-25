@@ -19,8 +19,7 @@ public class Projectile : MonoBehaviour
         rgbToDamageConversion = MaxDamage/255;
         damageValue = GameManager.instance.PlayerStats.Damage * rgbToDamageConversion;
 
-        if(damageValue<MinDamage)
-            damageValue = MinDamage;
+        damageValue += MinDamage;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

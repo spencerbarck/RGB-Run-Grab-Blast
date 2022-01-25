@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxSpeed: 8
-  MinSpeed: 2
+  MinSpeed: 1.5
   pathfinder: {fileID: -1316277733370199414}
 --- !u!50 &-7663428403629263583
 Rigidbody2D:
@@ -217,10 +217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b08ff1d6b0cc70478c06023f5cb6ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 200
-  MinHealth: 50
+  MaxHealth: 100
+  MinHealth: 1
   MaxDamage: 50
-  MinDamage: 10
+  MinDamage: 1
   damageValue: 0
 --- !u!114 &8474779036496642462
 MonoBehaviour:

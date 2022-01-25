@@ -15,21 +15,32 @@ public class PlayerCollision : CircleCollision
 
         health = GameManager.instance.PlayerStats.Health * rgbToHealthConversion;
 
-        if(health<MinHealth)
-            health = MinHealth;
+        health += MinHealth;
     }
     public override void TakeDamage(Damage damage)
     {
+        Debug.Log("Damage: "+damage.damageAmount);
         base.TakeDamage(damage);
         PlayerMover.Push(dmg.origin,dmg.pushForce);
-    }
-    public float GetHealth()
-    {
-        return health;
     }
     protected override void Death()
     {
         GameManager.instance.DisplayDeath();
         base.Death();
+    }
+
+    public void IncreaseHealth(float rValue)
+    {
+        MaxHealth += rValue*rgbToHealthConversion;
+        health += rValue*rgbToHealthConversion;
+        if(health < MaxHealth)
+        {
+            health += (rValue*rgbToHealthConversion)/2;
+            if(health>MaxHealth) health = MaxHealth;
+        }
+    }
+    public float GetHealth()
+    {
+        return health;
     }
 }

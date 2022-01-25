@@ -40,11 +40,17 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SetPlayerStats();
+        InitPlayerStats();
     }
-    private void SetPlayerStats()
+    public void InitPlayerStats()
     {
         PlayerCollision.SetPlayerHealth();
+        healthBar.SetMax();
+        PlayerMover.SetPlayerSpeed();
+    }
+    public void ChangePlayerStats(float healthIncrease)
+    {
+        PlayerCollision.IncreaseHealth(healthIncrease);
         healthBar.SetMax();
         PlayerMover.SetPlayerSpeed();
     }
@@ -59,7 +65,7 @@ public class GameManager : MonoBehaviour
         //Set Player Stats
         PlayerColor = PlayerStats.circleSpriteRenderer.color;
 
-        SetPlayerStats();
+        InitPlayerStats();
     }
     public void AddEnemies(int enemies)
     {

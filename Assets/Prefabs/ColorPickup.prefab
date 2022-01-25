@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupSprite: {fileID: 8980913893815318694}
-  pickupValue: 0.125
+  pickupValue: 0.003921569

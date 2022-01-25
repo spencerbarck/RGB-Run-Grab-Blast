@@ -19,11 +19,12 @@ public class EnemyCollision : CircleCollision
 
         rgbToHealthConversion = MaxHealth/255;
         health = GetComponent<SpriteRenderer>().color.r * 255 * rgbToHealthConversion;
+        health += MinHealth;
+        
         rgbToDamageConversion = MaxDamage/255;
         damageValue = GetComponent<SpriteRenderer>().color.b * 255 * rgbToDamageConversion;
+        damageValue += MinDamage;
         
-        if(health<MinHealth)
-            health = MinHealth;
     }
     private void OnCollisionEnter2D(Collision2D collsion)
     {
