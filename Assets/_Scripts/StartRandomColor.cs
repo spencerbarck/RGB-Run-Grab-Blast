@@ -19,7 +19,7 @@ public class StartRandomColor : MonoBehaviour
             b = Random.Range(0f,1f);
         }
 
-        spriteRenderer.color = new Color(Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f),1f);
+        //spriteRenderer.color = new Color(Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f),1f);
         
     }
 }

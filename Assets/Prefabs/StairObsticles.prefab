@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4687554746115232514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StairObsticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
