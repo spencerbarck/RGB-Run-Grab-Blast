@@ -14,14 +14,19 @@ public class WaveButton : MonoBehaviour
 
     public delegate void PressEvent();
     public event PressEvent pressEvent;
+
+    private void Start()
+    {
+        GameManager.instance.lastKillEvent += UnPressButton;
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E)&&Vector3.Distance(playerLocation.position,transform.position)<=pressRange)
         {
             if(isPressed)
             {
-                isPressed = false;
-                buttonSprite.enabled=true;
+                //isPressed = false;
+                //buttonSprite.enabled=true;
             }
             else
             {
@@ -31,9 +36,15 @@ public class WaveButton : MonoBehaviour
                 if(pressEvent != null)
                 {
                     pressEvent.Invoke();
-                    GameManager.instance.StartBattle();
+                    if(!GameManager.instance.BattleStarted)GameManager.instance.StartBattle();
                 }
             }
         }
+    }
+
+    private void UnPressButton()
+    {
+        isPressed = false;
+        buttonSprite.enabled=true;
     }
 }

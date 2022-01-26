@@ -15,8 +15,6 @@ public class ObjectSpawner : MonoBehaviour
     private Vector3 startingPosition;
     private Vector3 currentPosition;
     public float ChanceToSpawn = 1f;
-    public int objectsSpawned { get; private set; } = 0;
-
     [SerializeField]
     protected int spawnIterations = 1;
     protected int iterationsLeft = 1;
@@ -50,9 +48,7 @@ public class ObjectSpawner : MonoBehaviour
                 if(randSpawnCheck+ChanceToSpawn>1f)
                 {
                     SpawnObject(currentPosition);
-                    objectsSpawned++;
                 }
-
                 //Move to next position
                 currentPosition = new Vector3(currentPosition.x,currentPosition.y + yDistance,1);
             }
@@ -75,5 +71,4 @@ public class ObjectSpawner : MonoBehaviour
     public virtual void SpawnObject(Vector3 position)
     {
     }
-
 }

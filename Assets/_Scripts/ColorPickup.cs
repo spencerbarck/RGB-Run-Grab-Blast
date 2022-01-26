@@ -8,11 +8,10 @@ public class ColorPickup : MonoBehaviour
     private SpriteRenderer pickupSprite;
     [SerializeField]
     private float pickupValue = 0.1f;
-    private WaveButton waveButton;
     void Start()
     {
-        waveButton=GameManager.instance.waveButton;
-        //waveButton.pressEvent += RemovePickup;
+        GameManager.instance.lastKillEvent += RemovePickup;
+        pickupSprite.color = WaveManager.instance.PickupColorChoice;
     }
     private void OnCollisionEnter2D(Collision2D collsion)
     {
@@ -45,7 +44,7 @@ public class ColorPickup : MonoBehaviour
 
     public void RemovePickup()
     {
-        waveButton.pressEvent -= RemovePickup;
+        GameManager.instance.lastKillEvent -= RemovePickup;
         Destroy(gameObject);
     }
 }

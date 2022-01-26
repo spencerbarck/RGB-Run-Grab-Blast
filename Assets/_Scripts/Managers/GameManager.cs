@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     public WaveButton waveButton;
     [SerializeField]
     private EnemiesLeftCount enemiesLeftCount;
+    
+    [SerializeField]
+    private WaveNumberUI waveNumberUI;
     [SerializeField]
     private HealthBar healthBar;
     [SerializeField]
@@ -28,6 +31,9 @@ public class GameManager : MonoBehaviour
     public bool BattleStarted = false;
     public Color PlayerColor;
     public int EnemyCount = 0;
+
+    public delegate void LastKillEvent();
+    public event LastKillEvent lastKillEvent;
     private void Awake()
     {
         if(GameManager.instance != null)
@@ -57,15 +63,18 @@ public class GameManager : MonoBehaviour
     public void StartBattle()
     {
         if(BattleStarted==false)
+        {
             BattleStarted = true;
 
-        //Update UI
-        enemiesLeftCount.ShowCount();
+            //Update UI
+            enemiesLeftCount.ShowCount();
+            waveNumberUI.ShowCount();
 
-        //Set Player Stats
-        PlayerColor = PlayerStats.circleSpriteRenderer.color;
+            //Set Player Stats
+            PlayerColor = PlayerStats.circleSpriteRenderer.color;
 
-        InitPlayerStats();
+            InitPlayerStats();
+        }
     }
     public void AddEnemies(int enemies)
     {
@@ -74,6 +83,7 @@ public class GameManager : MonoBehaviour
     public void RemoveEnemy()
     {
         EnemyCount --;
+        if(EnemyCount==0)lastKillEvent.Invoke();
     }
     public void DisplayDeath()
     {
