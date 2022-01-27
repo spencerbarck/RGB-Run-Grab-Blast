@@ -10,7 +10,7 @@ public class CameraManager : MonoBehaviour
     private Vector3 target, mousePosition, shakeOffset;
     private Vector3 refVel = Vector3.zero;
     private float cameraDistance = 3.5f;
-    private float smoothTime = 1f;
+    private float smoothTime = 0.1f;
     private float zStart;
 
     float shakeMag, shakeTimeEnd;

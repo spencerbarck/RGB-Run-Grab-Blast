@@ -55,8 +55,11 @@ public class GameManager : MonoBehaviour
     }
     public void ChangePlayerStats(float healthIncrease)
     {
-        PlayerCollision.IncreaseHealth(healthIncrease);
-        healthBar.SetMax();
+        if(healthIncrease >0)
+        {
+            PlayerCollision.IncreaseHealth(healthIncrease);
+            healthBar.SetMax();
+        }
         PlayerMover.SetPlayerSpeed();
     }
     public void StartBattle()

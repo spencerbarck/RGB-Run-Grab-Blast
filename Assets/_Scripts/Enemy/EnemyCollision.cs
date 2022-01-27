@@ -49,7 +49,7 @@ public class EnemyCollision : CircleCollision
         var dmg = new Damage();
         dmg.damageAmount = damageValue;
         dmg.origin = transform.position;
-        dmg.pushForce = 2f;
+        dmg.pushForce = 4f;
         player.TakeDamage(dmg);
     }
     protected override void Death()

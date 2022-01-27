@@ -12,7 +12,6 @@ public class PlayerMover : CircleMovement
     Vector2 movement;
     Vector2 mousePosition;
     Vector3 pushDirection;
-    bool isPush;
     public void SetPlayerSpeed()
     {
         rgbToSpeedConversion = MaxSpeed/255;
@@ -52,9 +51,8 @@ public class PlayerMover : CircleMovement
         float rotationAngle = -1 * Mathf.Atan2(lookDirection.x,lookDirection.y) * Mathf.Rad2Deg;
         rigidBody.rotation=rotationAngle;
     }
-    public void Push(Vector3 pushOrigin,float force)
+    public void Push(Vector3 pushOrigin, float force)
     {
-        isPush = true;
         pushDirection = (transform.position - pushOrigin).normalized * force;
     }
     public float GetSpeed()
