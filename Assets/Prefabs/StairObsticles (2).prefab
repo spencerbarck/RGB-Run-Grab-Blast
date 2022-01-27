@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 924892059714019451}
   - component: {fileID: 924892059714019454}
   - component: {fileID: 924892059714019449}
-  - component: {fileID: 924892059714019448}
+  - component: {fileID: 813958080836218643}
   m_Layer: 6
   m_Name: Obsticle (1)
   m_TagString: Untagged
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &924892059714019448
+--- !u!114 &813958080836218643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 924892061344514501}
   - component: {fileID: 924892061344514504}
   - component: {fileID: 924892061344514507}
-  - component: {fileID: 924892061344514506}
+  - component: {fileID: 6276666909374223356}
   m_Layer: 6
   m_Name: Obsticle
   m_TagString: Untagged
@@ -267,7 +267,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &924892061344514506
+--- !u!114 &6276666909374223356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 924892061452912935}
   - component: {fileID: 924892061452912938}
   - component: {fileID: 924892061452912933}
-  - component: {fileID: 924892061452912932}
+  - component: {fileID: 5783438606529213378}
   m_Layer: 6
   m_Name: Obsticle (2)
   m_TagString: Untagged
@@ -391,7 +391,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &924892061452912932
+--- !u!114 &5783438606529213378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

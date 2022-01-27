@@ -65,12 +65,13 @@
      <Compile Include="Assets\_Scripts\StartRandomDimension.cs" />
      <Compile Include="Assets\_Scripts\Canvases\PlayerStatsUI.cs" />
      <Compile Include="Assets\_Scripts\StartRGOrB.cs" />
+     <Compile Include="Assets\_Scripts\Canvases\PickRGBUI.cs" />
      <Compile Include="Assets\_Scripts\Canvases\EnemiesLeftCount.cs" />
      <Compile Include="Assets\_Scripts\ColorPickup.cs" />
      <Compile Include="Assets\_Scripts\SlidingObsticle.cs" />
      <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Destructable.cs" />
-     <Compile Include="Assets\_Scripts\Canvases\PickRGBUI.cs" />
+     <Compile Include="Assets\_Scripts\_StartMenu\StartMenuCamera.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

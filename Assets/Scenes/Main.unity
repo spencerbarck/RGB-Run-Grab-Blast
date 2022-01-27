@@ -1607,7 +1607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickRGB: {fileID: 28741317}
-  WaveNumber: 1
+  WaveNumber: 0
   LastWave: 10
   EnemiesInWave: 0a0000000a0000000a0000000a0000000c0000000f0000001100000014000000190000001e000000
   PickupsInWave: 17

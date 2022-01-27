@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class StartRandomColor : MonoBehaviour
 {
-    [SerializeField]
     private SpriteRenderer spriteRenderer;
     public float minColor = 1;
     void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         float r = 0;
         float g = 0;
         float b = 0;
@@ -19,7 +19,7 @@ public class StartRandomColor : MonoBehaviour
             b = Random.Range(0f,1f);
         }
 
-        //spriteRenderer.color = new Color(Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f),1f);
+        spriteRenderer.color = new Color(r,g,b,1f);
         
     }
 }

@@ -39,7 +39,7 @@ public class PlayerMover : CircleMovement
         moveNoForce.x += pushDirection.x;
         moveNoForce.y += pushDirection.y;
 
-        rigidBody.velocity = moveNoForce * Time.deltaTime * 50;
+        rigidBody.velocity = moveNoForce * Time.deltaTime * 100;
         
         pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, 1f);
 
@@ -53,7 +53,9 @@ public class PlayerMover : CircleMovement
     }
     public void Push(Vector3 pushOrigin, float force)
     {
-        pushDirection = (transform.position - pushOrigin).normalized * force;
+        Debug.Log("Push");
+        GetComponent<Rigidbody2D>().AddForce((transform.position - pushOrigin)*force*50);
+        //pushDirection = (transform.position - pushOrigin).normalized * force;
     }
     public float GetSpeed()
     {

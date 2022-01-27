@@ -22,6 +22,11 @@ public class EnemyMover : CircleMovement
         base.Start();
         
     }
+
+    public void Push(Vector3 pushOrigin, float force)
+    {
+        GetComponent<Rigidbody2D>().AddForce((transform.position - pushOrigin)*force);
+    }
     //Old movement
     //Vector2 movement;
     //private float walkTimerTime = 3f;

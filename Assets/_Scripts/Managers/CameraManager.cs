@@ -10,7 +10,7 @@ public class CameraManager : MonoBehaviour
     private Vector3 target, mousePosition, shakeOffset;
     private Vector3 refVel = Vector3.zero;
     private float cameraDistance = 3.5f;
-    private float smoothTime = 0.1f;
+    private float smoothTime = 2f;
     private float zStart;
 
     float shakeMag, shakeTimeEnd;
@@ -32,7 +32,15 @@ public class CameraManager : MonoBehaviour
     {
         if(behaviorStarted)
         {
-            smoothTime = Mathf.Lerp(smoothTime,0,Time.deltaTime);
+            if(smoothTime>0f)
+            {
+                smoothTime = Mathf.Lerp(smoothTime,0,Time.deltaTime);
+                smoothTime -=0.001f;
+            }
+            else
+            {
+                smoothTime = 0f;
+            }
 
             mousePosition = CaptureMousePosition();
 
@@ -58,10 +66,10 @@ public class CameraManager : MonoBehaviour
         position -= Vector2.one;
 
         //Keep distance accurate around edges of screen
-        if(Mathf.Abs(position.x)>0.9f || Mathf.Abs(position.y)>0.9f)
-        {
-            position = position.normalized;
-        }
+        //if(Mathf.Abs(position.x)>0.9f || Mathf.Abs(position.y)>0.9f)
+        //{
+            //position = position.normalized;
+        //}
         return position;
     }
 
