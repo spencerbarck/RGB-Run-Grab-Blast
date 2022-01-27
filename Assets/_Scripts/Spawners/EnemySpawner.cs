@@ -20,8 +20,18 @@ public class EnemySpawner : ObjectSpawner
     }
     public override void SpawnObject(Vector3 position)
     {
-        GameManager.instance.AddEnemies(1);
-        Instantiate(enemyToSpawn,position,Quaternion.identity);
+        if(WaveManager.instance.EnemiesLeftInWave>0)
+        {
+            GameManager.instance.AddEnemies(1);
+            Instantiate(enemyToSpawn,position,Quaternion.identity);
+
+            WaveManager.instance.EnemiesLeftInWave--;
+        }
+        else
+        {
+            iterationsLeft = 0;
+            spawnIterations = 0;
+        }
     }
 
     public void StartSpawning()

@@ -19,14 +19,17 @@ public class PlayerCollision : CircleCollision
     }
     public override void TakeDamage(Damage damage)
     {
-        Debug.Log("Damage: "+damage.damageAmount);
         base.TakeDamage(damage);
         PlayerMover.Push(dmg.origin,dmg.pushForce);
     }
     protected override void Death()
     {
+        GetComponent<PlayerMover>().enabled = false;
+        GetComponent<PlayerShooter>().enabled = false;
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<PolygonCollider2D>().enabled = false;
         GameManager.instance.DisplayDeath();
-        base.Death();
     }
 
     public void IncreaseHealth(float rValue)

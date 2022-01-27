@@ -13,8 +13,12 @@ public class EnemyCollision : CircleCollision
     private float rgbToDamageConversion;
     private Vector3 pushDirection;
     private Collider2D enemyCollider2D;
+    private void Awake()
+    {
+        SetEnemyColor();
+    }
     private void Start()
-    { 
+    {
         enemyCollider2D = GetComponent<Collider2D>();
 
         rgbToHealthConversion = MaxHealth/255;
@@ -52,5 +56,19 @@ public class EnemyCollision : CircleCollision
     {
         base.Death();
         GameManager.instance.RemoveEnemy();
+    }
+    
+    private void SetEnemyColor()
+    {
+        float r = 0;
+        float g = 0;
+        float b = 0;
+        while((r+g+b<WaveManager.instance.EnemyColorInWave[WaveManager.instance.WaveNumber-1]))
+        {
+            r = Random.Range(0f,1f);
+            g = Random.Range(0f,1f);
+            b = Random.Range(0f,1f);
+        }
+        GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f,r),Random.Range(0f,g),Random.Range(0f,b),1f);
     }
 }
