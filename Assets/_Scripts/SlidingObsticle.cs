@@ -5,38 +5,75 @@ using UnityEngine;
 public class SlidingObsticle : MonoBehaviour
 {
     [SerializeField]
-    //private WaveButton waveButton;
+    private WaveButton waveButton;
+    [SerializeField]
     private PickRGBUI pickRGB;
     private Vector3 startingPosition;
     private Vector3 openPosition;
-    private bool isMoving = false;
+    private bool isOpening = false;
+    private bool isClosing = false;
     private float slideDistance = 2.5f;
+    [SerializeField]
+    private string SlideDirection = "Left";
     void Start()
     {
-        //waveButton.pressEvent += MoveObsticle;
-        pickRGB.colorPickEvent += MoveObsticle;
+        pickRGB.colorPickEvent += StartOpening;
+        waveButton.pressEvent += StartClosing;
         startingPosition = transform.position;
-        openPosition = new Vector3(startingPosition.x-slideDistance,startingPosition.y-slideDistance,startingPosition.z);
+        switch(SlideDirection)
+        {
+        case "Left":
+            openPosition = new Vector3(startingPosition.x-slideDistance,startingPosition.y,startingPosition.z);
+            break;
+        case "Right":
+            openPosition = new Vector3(startingPosition.x+slideDistance,startingPosition.y,startingPosition.z);
+            break;
+        case "Up":
+            openPosition = new Vector3(startingPosition.x,startingPosition.y+slideDistance,startingPosition.z);
+            break;
+        case "Down":
+            openPosition = new Vector3(startingPosition.x,startingPosition.y-slideDistance,startingPosition.z);
+            break;
+        default:
+            break;
+        }
     }
-    private void MoveObsticle()
+    private void StartOpening()
     {
-        //waveButton.pressEvent -= MoveObsticle;
-        pickRGB.colorPickEvent -= MoveObsticle;
-        isMoving = true;
+        isOpening = true;
+    }
+    private void StartClosing()
+    {
+        isClosing = true;
     }
     private void Update()
     {
-        if(isMoving)
+        if(isOpening)
         {
-            if((transform.position.x>openPosition.x)&&(transform.position.y>openPosition.y)&&(transform.position.y<startingPosition.y+slideDistance))
-            {
-                transform.Translate(Vector3.left * Time.deltaTime);
-            }
-            else
-            {
-                AstarPath.active.Scan();
-                Destroy(gameObject);
-            }
+            Open();
+        }
+        if(isClosing)
+        {
+            Close();
+        }
+    }
+
+    private void Open()
+    {
+        transform.position = Vector3.Lerp(transform.position,openPosition,Time.deltaTime);
+        if((Mathf.Abs(transform.position.x - openPosition.x)<0.1f)&&(Mathf.Abs(transform.position.y - openPosition.y)<0.1f))
+        {
+            AstarPath.active.Scan();
+            isOpening = false;
+        }
+    }
+
+    private void Close()
+    {
+        transform.position = Vector3.Lerp(transform.position,startingPosition,Time.deltaTime*3);
+        if((Mathf.Abs(transform.position.x - startingPosition.x)<0.1f)&&(Mathf.Abs(transform.position.y - startingPosition.y)<0.1f))
+        {
+            isClosing = false;
         }
     }
 }

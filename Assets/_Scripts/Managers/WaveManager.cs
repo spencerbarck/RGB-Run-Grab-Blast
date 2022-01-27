@@ -28,7 +28,6 @@ public class WaveManager : MonoBehaviour
         }
         instance=this;
     }
-
     private void Start()
     {
         PickupsLeftInWave = PickupsInWave;
@@ -41,6 +40,7 @@ public class WaveManager : MonoBehaviour
     }
     private void WaveStart()
     {
+
         WaveNumber++;
         EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
         PickupsLeftInWave = PickupsInWave;

@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private DeathScreen deathScreen;
     //
-
     //Values
     public bool BattleStarted = false;
     public Color PlayerColor;
@@ -66,15 +65,17 @@ public class GameManager : MonoBehaviour
         {
             BattleStarted = true;
 
-            //Update UI
-            enemiesLeftCount.ShowCount();
-            waveNumberUI.ShowCount();
-
             //Set Player Stats
             PlayerColor = PlayerStats.circleSpriteRenderer.color;
 
             InitPlayerStats();
         }
+    }
+    public void StartBattleUI()
+    {
+        //Update UI
+        enemiesLeftCount.ShowCount();
+        waveNumberUI.ShowCount();
     }
     public void AddEnemies(int enemies)
     {
