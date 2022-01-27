@@ -15,6 +15,9 @@ public class PickRGBUI : MonoBehaviour
     private Vector3 startingPositionR;
     private Vector3 startingPositionG;
     private Vector3 startingPositionB;
+
+    public delegate void ColorPickEvent();
+    public event ColorPickEvent colorPickEvent;
     void Start()
     {
         startingPositionR = transformR.position;
@@ -41,6 +44,8 @@ public class PickRGBUI : MonoBehaviour
             break;
         }
         MoveButtonsAway();
+        colorPickEvent.Invoke();
+        if(!GameManager.instance.BattleStarted)GameManager.instance.StartBattle();
     }
 
     public void MoveButtonsAway()

@@ -6,7 +6,8 @@ public class WaveManager : MonoBehaviour
 {
     public static WaveManager instance;
     [SerializeField]
-    private WaveButton waveButton;
+    //private WaveButton waveButton;
+    private PickRGBUI pickRGB;
     public int WaveNumber = 0;
     public int LastWave = 10;
     public int[] EnemiesInWave = {10,10,10,10,12,15,17,20,25,30};
@@ -31,7 +32,8 @@ public class WaveManager : MonoBehaviour
     private void Start()
     {
         PickupsLeftInWave = PickupsInWave;
-        waveButton.pressEvent += WaveStart;
+        pickRGB.colorPickEvent += WaveStart;
+        //waveButton.pressEvent += WaveStart;
         GameManager.instance.lastKillEvent += WaveEnd;
 
         enemySpawners = FindObjectsOfType<EnemySpawner>();
@@ -41,6 +43,7 @@ public class WaveManager : MonoBehaviour
     {
         WaveNumber++;
         EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
+        PickupsLeftInWave = PickupsInWave;
 
         List<PickupSpawner> spawnList = new List<PickupSpawner>();
         foreach(PickupSpawner pS in pickupSpawners)
@@ -57,7 +60,6 @@ public class WaveManager : MonoBehaviour
 
         foreach(PickupSpawner pickupSpawner in spawnArray)
         {
-            Debug.Log(pickupSpawner.gameObject.name);
             pickupSpawner.SpawnObject(pickupSpawner.transform.position);
         }
 

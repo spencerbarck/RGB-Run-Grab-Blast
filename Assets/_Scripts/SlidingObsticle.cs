@@ -5,20 +5,23 @@ using UnityEngine;
 public class SlidingObsticle : MonoBehaviour
 {
     [SerializeField]
-    private WaveButton waveButton;
+    //private WaveButton waveButton;
+    private PickRGBUI pickRGB;
     private Vector3 startingPosition;
     private Vector3 openPosition;
     private bool isMoving = false;
     private float slideDistance = 2.5f;
     void Start()
     {
-        waveButton.pressEvent += MoveObsticle;
+        //waveButton.pressEvent += MoveObsticle;
+        pickRGB.colorPickEvent += MoveObsticle;
         startingPosition = transform.position;
         openPosition = new Vector3(startingPosition.x-slideDistance,startingPosition.y-slideDistance,startingPosition.z);
     }
     private void MoveObsticle()
     {
-        waveButton.pressEvent -= MoveObsticle;
+        //waveButton.pressEvent -= MoveObsticle;
+        pickRGB.colorPickEvent -= MoveObsticle;
         isMoving = true;
     }
     private void Update()

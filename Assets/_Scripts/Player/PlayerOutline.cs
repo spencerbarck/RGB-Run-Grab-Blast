@@ -6,14 +6,18 @@ public class PlayerOutline : MonoBehaviour
 {
     
     [SerializeField]
-    public WaveButton waveButton;
+    //public WaveButton waveButton;
+    private PickRGBUI pickRGB;
+    
     void Start()
     {
-        waveButton.pressEvent += RemoveOutline;
+        //waveButton.pressEvent += RemoveOutline;
+        pickRGB.colorPickEvent += RemoveOutline;
     }
     public void RemoveOutline()
     {
-        waveButton.pressEvent -= RemoveOutline;
+        //waveButton.pressEvent -= RemoveOutline;
+        pickRGB.colorPickEvent -= RemoveOutline;
         Destroy(gameObject);
     }
 }

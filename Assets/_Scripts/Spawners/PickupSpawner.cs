@@ -7,8 +7,6 @@ public class PickupSpawner : ObjectSpawner
     [SerializeField]
     private GameObject pickupToSpawn;
     int tempSpawnIterations;
-    [SerializeField]
-    private WaveButton waveButton;
     protected override void Start()
     {
         tempSpawnIterations = spawnIterations;

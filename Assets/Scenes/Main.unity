@@ -265,7 +265,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &7383765
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +317,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &11767206
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,7 +673,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &68835847
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &77992524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1383,7 +1380,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &134575632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,7 +1432,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &135641345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1563,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &147600475
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,7 +1606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a51f6b644344dfb48947899fedcedaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
   WaveNumber: 0
   LastWave: 10
   EnemiesInWave: 0a0000000a0000000a0000000a0000000c0000000f0000001100000014000000190000001e000000
@@ -1684,7 +1678,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &151708997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,7 +2584,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &275914037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,7 +2636,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &278999004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,7 +2688,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &279363534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,7 +2740,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &286528241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,7 +2927,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &295079122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,7 +3487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!61 &359683200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3738,7 +3726,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &379845690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3919,7 +3906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!1 &406308296
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,7 +3959,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &414010521
 GameObject:
   m_ObjectHideFlags: 0
@@ -4115,7 +4101,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &427527485
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,7 +4531,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &519181612
 GameObject:
   m_ObjectHideFlags: 0
@@ -4949,7 +4933,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &570686498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,7 +5080,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &597404878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5150,7 +5132,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &620381432
 GameObject:
   m_ObjectHideFlags: 0
@@ -5204,7 +5185,7 @@ MonoBehaviour:
   respawnDelay: 2
   startSpawned: 1
   enemyToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!1 &620880403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5483,7 +5464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!61 &652533430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5613,7 +5594,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &677936980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,7 +5772,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &726682547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5943,7 +5922,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &748120776
 GameObject:
   m_ObjectHideFlags: 0
@@ -6217,7 +6195,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &765652406
 GameObject:
   m_ObjectHideFlags: 0
@@ -6271,7 +6248,7 @@ MonoBehaviour:
   respawnDelay: 2
   startSpawned: 1
   enemyToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!1 &777442665
 GameObject:
   m_ObjectHideFlags: 0
@@ -7007,7 +6984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!1 &883466822
 GameObject:
   m_ObjectHideFlags: 0
@@ -7251,7 +7228,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &912418200
 GameObject:
   m_ObjectHideFlags: 0
@@ -7304,7 +7280,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &944827203
 GameObject:
   m_ObjectHideFlags: 0
@@ -7357,7 +7332,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &962411458
 GameObject:
   m_ObjectHideFlags: 0
@@ -7410,7 +7384,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &965187810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7538,7 +7511,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &986641808
 GameObject:
   m_ObjectHideFlags: 0
@@ -7726,7 +7698,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1009410993
 GameObject:
   m_ObjectHideFlags: 0
@@ -7913,7 +7884,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1038805635
 GameObject:
   m_ObjectHideFlags: 0
@@ -8272,7 +8242,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1093613814
 GameObject:
   m_ObjectHideFlags: 0
@@ -8325,7 +8294,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1108872249
 GameObject:
   m_ObjectHideFlags: 0
@@ -8426,7 +8394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!61 &1114328900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8556,7 +8524,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1134864336
 GameObject:
   m_ObjectHideFlags: 0
@@ -8691,7 +8658,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1144335928
 GameObject:
   m_ObjectHideFlags: 0
@@ -8799,7 +8765,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1172868973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9073,7 +9038,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1216344825
 GameObject:
   m_ObjectHideFlags: 0
@@ -9126,7 +9090,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1228683019
 GameObject:
   m_ObjectHideFlags: 0
@@ -9255,7 +9218,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1242506623
 GameObject:
   m_ObjectHideFlags: 0
@@ -9308,7 +9270,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1258062193
 GameObject:
   m_ObjectHideFlags: 0
@@ -9361,7 +9322,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1268895146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9670,7 +9630,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1329841972
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,7 +10068,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1408177463
 GameObject:
   m_ObjectHideFlags: 0
@@ -10303,7 +10261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!61 &1433569843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11068,7 +11026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fda25f2d264b447a3df9837ffff8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!1 &1513268116
 GameObject:
   m_ObjectHideFlags: 0
@@ -11121,7 +11079,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1519344015
 GameObject:
   m_ObjectHideFlags: 0
@@ -11289,7 +11246,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1572719202
 GameObject:
   m_ObjectHideFlags: 0
@@ -11418,7 +11374,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1586135873
 GameObject:
   m_ObjectHideFlags: 0
@@ -11471,7 +11426,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1588354151
 GameObject:
   m_ObjectHideFlags: 0
@@ -11674,7 +11628,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1612789538
 GameObject:
   m_ObjectHideFlags: 0
@@ -11727,7 +11680,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1634360719
 GameObject:
   m_ObjectHideFlags: 0
@@ -12173,7 +12125,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1707855604
 GameObject:
   m_ObjectHideFlags: 0
@@ -12305,7 +12256,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1715294912
 GameObject:
   m_ObjectHideFlags: 0
@@ -12645,7 +12595,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1743175220
 GameObject:
   m_ObjectHideFlags: 0
@@ -12737,7 +12686,7 @@ MonoBehaviour:
   respawnDelay: 2
   startSpawned: 1
   enemyToSpawn: {fileID: 3844438597147154327, guid: 8aa42b28b7ab88547ae5dd58a45398d2, type: 3}
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!1 &1756497630
 GameObject:
   m_ObjectHideFlags: 0
@@ -13199,7 +13148,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1796201340
 GameObject:
   m_ObjectHideFlags: 0
@@ -13252,7 +13200,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1800483729
 GameObject:
   m_ObjectHideFlags: 0
@@ -13305,7 +13252,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1835990700
 GameObject:
   m_ObjectHideFlags: 0
@@ -13390,7 +13336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!61 &1847719288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14056,7 +14002,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1901200826
 GameObject:
   m_ObjectHideFlags: 0
@@ -14144,7 +14089,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1941614081
 GameObject:
   m_ObjectHideFlags: 0
@@ -14197,7 +14141,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &1943204787
 GameObject:
   m_ObjectHideFlags: 0
@@ -14651,7 +14594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6896f9845df224b83e0c21801f0d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveButton: {fileID: 178202074}
+  pickRGB: {fileID: 28741317}
 --- !u!61 &1989938714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14857,7 +14800,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &2005260150
 GameObject:
   m_ObjectHideFlags: 0
@@ -15094,7 +15036,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &2050684425
 GameObject:
   m_ObjectHideFlags: 0
@@ -15441,7 +15382,6 @@ MonoBehaviour:
   respawnDelay: 0
   startSpawned: 1
   pickupToSpawn: {fileID: 8980913893815318695, guid: 36063ce777f11674f93c27266a0fed6b, type: 3}
-  waveButton: {fileID: 178202074}
 --- !u!1 &2116100260
 GameObject:
   m_ObjectHideFlags: 0

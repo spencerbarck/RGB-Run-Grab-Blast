@@ -8,13 +8,16 @@ public class EnemySpawner : ObjectSpawner
     [SerializeField]
     private GameObject enemyToSpawn;
     [SerializeField]
-    private WaveButton waveButton;
+    //private WaveButton waveButton;
+    private PickRGBUI pickRGB;
+    
     private int tempSpawnIterations;
     protected override void Start()
     {
         tempSpawnIterations = spawnIterations;
         spawnIterations = 0;
-        waveButton.pressEvent += StartSpawning;
+        //waveButton.pressEvent += StartSpawning;
+        pickRGB.colorPickEvent += StartSpawning;
         
         base.Start();
     }
@@ -37,6 +40,7 @@ public class EnemySpawner : ObjectSpawner
     public void StartSpawning()
     {
         iterationsLeft = tempSpawnIterations;
-        waveButton.pressEvent -= StartSpawning;
+        //waveButton.pressEvent -= StartSpawning;
+        pickRGB.colorPickEvent -= StartSpawning;
     }
 }
