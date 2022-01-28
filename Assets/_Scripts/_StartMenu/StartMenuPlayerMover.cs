@@ -10,6 +10,7 @@ public class StartMenuPlayerMover : MonoBehaviour
     protected Rigidbody2D rigidBody;
     void Start()
     {
+        SoundManager.instance.PlaySound("StartMenuMusic");
         rigidBody = GetComponent<Rigidbody2D>();
     }
 

@@ -45,6 +45,8 @@
      <Compile Include="Assets\_Scripts\Canvases\RGBUI.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerMover.cs" />
      <Compile Include="Assets\_Scripts\WaveButton.cs" />
+     <Compile Include="Assets\_Scripts\_StartMenu\StartMenuPlayerMover.cs" />
+     <Compile Include="Assets\_Scripts\_StartMenu\StartMenuCanvas.cs" />
      <Compile Include="Assets\_Scripts\Spawners\VanishOnStart.cs" />
      <Compile Include="Assets\_Scripts\Spawners\ObsticleSpawner.cs" />
      <Compile Include="Assets\_Scripts\Enemy\EnemyMover.cs" />
@@ -53,6 +55,7 @@
      <Compile Include="Assets\_Scripts\Player\Projectile.cs" />
      <Compile Include="Assets\_Scripts\Circle\CircleMovement.cs" />
      <Compile Include="Assets\_Scripts\Spawners\EnemySpawner.cs" />
+     <Compile Include="Assets\_Scripts\Managers\SoundManager.cs" />
      <Compile Include="Assets\_Scripts\Managers\CameraManager.cs" />
      <Compile Include="Assets\_Scripts\ObsticleGridUpdate.cs" />
      <Compile Include="Assets\_Scripts\Enemy\EnemyCollision.cs" />
@@ -64,6 +67,7 @@
      <Compile Include="Assets\_Scripts\Player\PlayerCollision.cs" />
      <Compile Include="Assets\_Scripts\StartRandomDimension.cs" />
      <Compile Include="Assets\_Scripts\Canvases\PlayerStatsUI.cs" />
+     <Compile Include="Assets\_Scripts\Canvases\AssistUI.cs" />
      <Compile Include="Assets\_Scripts\StartRGOrB.cs" />
      <Compile Include="Assets\_Scripts\Canvases\PickRGBUI.cs" />
      <Compile Include="Assets\_Scripts\_StartMenu\StartMenuCamera.cs" />
@@ -72,10 +76,7 @@
      <Compile Include="Assets\_Scripts\SlidingObsticle.cs" />
      <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Destructable.cs" />
-     <Compile Include="Assets\_Scripts\_StartMenu\StartMenuCanvas.cs" />
-     <Compile Include="Assets\_Scripts\_StartMenu\StartMenuPlayerMover.cs" />
-     <Compile Include="Assets\_Scripts\Canvases\AssistUI.cs" />
-     <Compile Include="Assets\_Scripts\Managers\SoundManager.cs" />
+     <Compile Include="Assets\_Scripts\Sound.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -715,6 +716,9 @@
     <Reference Include="Unity.InternalAPIEditorBridge.001">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+        <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -732,6 +736,9 @@
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
@@ -759,12 +766,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-        <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-        <HintPath>C:\Users\S\Desktop\UnityGames\RGB Run Grab Blast\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

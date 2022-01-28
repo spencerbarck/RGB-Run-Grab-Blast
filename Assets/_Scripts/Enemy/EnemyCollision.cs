@@ -47,6 +47,7 @@ public class EnemyCollision : CircleCollision
     }
     private void ApplyDamageToPlayer(PlayerCollision player)
     {
+        SoundManager.instance.PlaySound("Hurt");
         var dmg = new Damage();
         dmg.damageAmount = damageValue;
         dmg.origin = transform.position;
@@ -57,6 +58,7 @@ public class EnemyCollision : CircleCollision
     }
     protected override void Death()
     {
+        SoundManager.instance.PlaySound("EnemyDeath");
         base.Death();
         GameManager.instance.RemoveEnemy();
     }

@@ -19,6 +19,7 @@ public class ColorPickup : MonoBehaviour
         PlayerStats player = collsion.gameObject.GetComponent<PlayerStats>();
         if(player != null)
         {
+            SoundManager.instance.PlaySound("Pickup");
             Color newColor;
 
             if(pickupSprite.color.r >0)

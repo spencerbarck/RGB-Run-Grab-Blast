@@ -34,6 +34,7 @@ public class PlayerShooter : MonoBehaviour
 
     private void Shoot()
     {
+        SoundManager.instance.PlaySound("PlayerBlast");
         cameraManager.ScreenShake((transform.position - firePoint.position).normalized, 0.05f, 0.1f);
 
         GameObject projectile = Instantiate(projectilePrefab,firePoint.position,firePoint.rotation);

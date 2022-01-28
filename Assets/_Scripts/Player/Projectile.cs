@@ -27,6 +27,8 @@ public class Projectile : MonoBehaviour
         EnemyCollision enemy = collision.gameObject.GetComponent<EnemyCollision>();
         if(enemy != null)
         {
+            
+            SoundManager.instance.PlaySound("Hitmark");
             ApplyDamageToEnemy(enemy);
         }
         Destroy(gameObject);

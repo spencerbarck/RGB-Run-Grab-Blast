@@ -40,7 +40,9 @@ public class WaveManager : MonoBehaviour
     }
     private void WaveStart()
     {
-
+        SoundManager.instance.PlaySound("WaveStart");
+        SoundManager.instance.StopSound("StartMenuMusic");
+        SoundManager.instance.PlaySound("WaveStartMusic1");
         WaveNumber++;
         EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
         PickupsLeftInWave = PickupsInWave;
@@ -74,5 +76,6 @@ public class WaveManager : MonoBehaviour
 
     private void WaveEnd()
     {
+        SoundManager.instance.PlaySound("WaveEnd");
     }
 }

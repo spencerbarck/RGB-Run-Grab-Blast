@@ -24,6 +24,9 @@ public class PlayerCollision : CircleCollision
     }
     protected override void Death()
     {
+        SoundManager.instance.StopSound("WaveStartMusic1");
+        SoundManager.instance.PlaySound("DeathMusic");
+
         GameManager.instance.DisplayDeath();
         GetComponent<PlayerMover>().enabled = false;
         GetComponent<PlayerShooter>().enabled = false;
