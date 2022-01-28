@@ -12,6 +12,7 @@ public class PickRGBUI : MonoBehaviour
     private Transform transformB;
     [SerializeField]
     private WaveButton waveButton;
+    private Vector3 startingPosition;
     private Vector3 startingPositionR;
     private Vector3 startingPositionG;
     private Vector3 startingPositionB;
@@ -20,6 +21,7 @@ public class PickRGBUI : MonoBehaviour
     public event ColorPickEvent colorPickEvent;
     void Start()
     {
+        startingPosition = transform.position;
         startingPositionR = transformR.position;
         startingPositionG = transformG.position;
         startingPositionB = transformB.position;
@@ -46,13 +48,17 @@ public class PickRGBUI : MonoBehaviour
         MoveButtonsAway();
         FindObjectOfType<PlayerShooter>().enabled = true;
         colorPickEvent.Invoke();
-        if(!GameManager.instance.BattleStarted)GameManager.instance.StartBattle();
-        GameManager.instance.StartBattleUI();
+        if(!GameManager.instance.BattleStarted)
+        {
+            GameManager.instance.StartBattle();
+            GameManager.instance.StartBattleUI();
+        }
     }
 
     public void MoveButtonsAway()
     {
         FindObjectOfType<PlayerShooter>().enabled = false;
+        transform.position = new Vector3(transform.position.x,transform.position.y+10000f,transform.position.z);
         transformR.position = new Vector3(transformR.position.x+-10000f,transformR.position.y,transformR.position.z);
         transformG.position = new Vector3(transformG.position.x,transformG.position.y+10000f,transformG.position.z);
         transformB.position = new Vector3(transformB.position.x+10000f,transformB.position.y+10000f,transformB.position.z);
@@ -61,6 +67,7 @@ public class PickRGBUI : MonoBehaviour
     public void ShowButtons()
     {  
         FindObjectOfType<PlayerShooter>().enabled = false;
+        transform.position = startingPosition;
         transformR.position = startingPositionR;
         transformG.position = startingPositionG;
         transformB.position = startingPositionB;

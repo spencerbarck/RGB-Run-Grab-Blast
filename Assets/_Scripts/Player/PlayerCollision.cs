@@ -24,12 +24,13 @@ public class PlayerCollision : CircleCollision
     }
     protected override void Death()
     {
+        GameManager.instance.DisplayDeath();
         GetComponent<PlayerMover>().enabled = false;
         GetComponent<PlayerShooter>().enabled = false;
         GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<PolygonCollider2D>().enabled = false;
-        GameManager.instance.DisplayDeath();
+        FindObjectOfType<CameraManager>().enabled = false;
     }
 
     public void IncreaseHealth(float rValue)

@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxXSize: 1
-  maxYSize: 3
+  maxYSize: 9
   isRandom: 0
 --- !u!61 &602973272550744728
 BoxCollider2D:

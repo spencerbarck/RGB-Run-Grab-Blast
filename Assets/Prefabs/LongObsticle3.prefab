@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4133729b916b71a4ab6e9ccdd0dbe9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxXSize: 3
+  maxXSize: 9
   maxYSize: 1
   isRandom: 0
 --- !u!61 &5719662362402777659

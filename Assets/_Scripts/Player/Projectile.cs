@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
     private float rgbToDamageConversion;
     private void Start()
     {
-        GetComponent<SpriteRenderer>().color = GameManager.instance.PlayerColor;
+        GetComponent<SpriteRenderer>().color = FindObjectOfType<PlayerShooter>().GetComponent<SpriteRenderer>().color;
         SetDamage();
     }
     private void SetDamage()

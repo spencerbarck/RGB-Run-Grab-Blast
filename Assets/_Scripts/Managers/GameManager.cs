@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
             PlayerColor = PlayerStats.circleSpriteRenderer.color;
 
             InitPlayerStats();
+            StartBattleUI();
         }
     }
     public void StartBattleUI()

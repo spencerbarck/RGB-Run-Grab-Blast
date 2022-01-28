@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe52aee14cfe63042929d90f571c3572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 3844438597147154324}
   minColor: 2
 --- !u!60 &2884169993734486795
 PolygonCollider2D:
@@ -217,9 +216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b08ff1d6b0cc70478c06023f5cb6ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 4000
+  MaxHealth: 510
   MinHealth: 1
-  MaxDamage: 50
+  MaxDamage: 255
   MinDamage: 1
   damageValue: 0
 --- !u!114 &8474779036496642462
