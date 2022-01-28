@@ -20,6 +20,8 @@ public class DeathScreen : MonoBehaviour
 
     public void PlayAgain()
     {
+        SoundManager.instance.StopSound("DeathMusic");
+        SoundManager.instance.PlaySound("BetweenWaveMusic");
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
     }
 }

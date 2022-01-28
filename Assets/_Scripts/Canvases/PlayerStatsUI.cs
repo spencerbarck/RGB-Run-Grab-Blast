@@ -24,7 +24,7 @@ public class PlayerStatsUI : MonoBehaviour
 
     void Update()
     {
-        healthText.text = "Health: "+playerCollision.GetHealth();
+        healthText.text = "Health: "+playerCollision.GetCappedHealth();
         speedText.text = "Speed: "+playerMover.GetSpeed();
         
 

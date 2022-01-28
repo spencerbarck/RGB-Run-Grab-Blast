@@ -217,10 +217,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 510
-  MinHealth: 1
+  MinHealth: 255
   MaxDamage: 255
-  MinDamage: 1
+  MinDamage: 63.75
   damageValue: 0
+  menuEnemy: 0
 --- !u!114 &8474779036496642462
 MonoBehaviour:
   m_ObjectHideFlags: 0

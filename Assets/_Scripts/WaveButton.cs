@@ -35,6 +35,7 @@ public class WaveButton : MonoBehaviour
 
                 if(pressEvent != null)
                 {
+                    SoundManager.instance.PlaySound("WaveButton");
                     pressEvent.Invoke();
                     if(!GameManager.instance.BattleStarted)GameManager.instance.StartBattle();
                 }

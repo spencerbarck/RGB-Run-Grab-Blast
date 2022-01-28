@@ -35,6 +35,9 @@ public class StartMenuCanvas : MonoBehaviour
     }
     public void StartGame()
     {
+        SoundManager.instance.PlaySound("PlayGameButton");
+        SoundManager.instance.StopSound("StartMenuMusic");
+        SoundManager.instance.PlaySound("BetweenWaveMusic");
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
     }
     private void CycleColor(TMP_Text character)

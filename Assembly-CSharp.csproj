@@ -64,6 +64,7 @@
      <Compile Include="Assets\_Scripts\Spawners\ObjectSpawner.cs" />
      <Compile Include="Assets\_Scripts\StartRandomColor.cs" />
      <Compile Include="Assets\_Scripts\Damage.cs" />
+     <Compile Include="Assets\_Scripts\Sound.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerCollision.cs" />
      <Compile Include="Assets\_Scripts\StartRandomDimension.cs" />
      <Compile Include="Assets\_Scripts\Canvases\PlayerStatsUI.cs" />
@@ -76,7 +77,7 @@
      <Compile Include="Assets\_Scripts\SlidingObsticle.cs" />
      <Compile Include="Assets\_Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\_Scripts\Destructable.cs" />
-     <Compile Include="Assets\_Scripts\Sound.cs" />
+     <Compile Include="Assets\_Scripts\Canvases\WaveOverUI.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

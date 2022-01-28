@@ -2736,6 +2736,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: BetweenWaveMusic
+    clip: {fileID: 8300000, guid: d1af375d311f75f46a6f678808fc360e, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayGameButton
+    clip: {fileID: 8300000, guid: 2c18695b24ab2bc4bbfcdcfc2df7cffd, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WaveButton
+    clip: {fileID: 8300000, guid: 1bbfa1c328006924794ecc87180647c5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1694085024
 Transform:
   m_ObjectHideFlags: 0

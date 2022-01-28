@@ -9,6 +9,7 @@ public class PlayerCollision : CircleCollision
     private float rgbToHealthConversion;
     [SerializeField]
     private PlayerMover PlayerMover;
+    private float cappedHealth;
     public void SetPlayerHealth()
     {
         rgbToHealthConversion = MaxHealth/255;
@@ -16,6 +17,8 @@ public class PlayerCollision : CircleCollision
         health = GameManager.instance.PlayerStats.Health * rgbToHealthConversion;
 
         health += MinHealth;
+
+        cappedHealth = health;
     }
     public override void TakeDamage(Damage damage)
     {
@@ -38,16 +41,24 @@ public class PlayerCollision : CircleCollision
 
     public void IncreaseHealth(float rValue)
     {
-        MaxHealth += rValue*rgbToHealthConversion;
+        cappedHealth += rValue*rgbToHealthConversion;
         health += rValue*rgbToHealthConversion;
-        if(health < MaxHealth)
-        {
-            health += (rValue*rgbToHealthConversion)/2;
-            if(health>MaxHealth) health = MaxHealth;
-        }
+        //if(health < cappedHealth)
+        //{
+        //    health += (rValue*rgbToHealthConversion)/2;
+        //    if(health>cappedHealth) health = cappedHealth;
+        //}
     }
     public float GetHealth()
     {
         return health;
+    }
+    public float GetCappedHealth()
+    {
+        return cappedHealth;
+    }
+    public void MaxOutHealth()
+    {
+        health = cappedHealth;
     }
 }

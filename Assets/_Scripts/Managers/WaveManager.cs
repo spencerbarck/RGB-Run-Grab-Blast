@@ -42,7 +42,11 @@ public class WaveManager : MonoBehaviour
     {
         SoundManager.instance.PlaySound("WaveStart");
         SoundManager.instance.StopSound("StartMenuMusic");
+        SoundManager.instance.StopSound("BetweenWaveMusic");
         SoundManager.instance.PlaySound("WaveStartMusic1");
+
+        FindObjectOfType<PlayerCollision>().MaxOutHealth();
+
         WaveNumber++;
         EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
         PickupsLeftInWave = PickupsInWave;
@@ -77,5 +81,7 @@ public class WaveManager : MonoBehaviour
     private void WaveEnd()
     {
         SoundManager.instance.PlaySound("WaveEnd");
+        SoundManager.instance.StopSound("WaveStartMusic1");
+        SoundManager.instance.PlaySound("BetweenWaveMusic");
     }
 }
