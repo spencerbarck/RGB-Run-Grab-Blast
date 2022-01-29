@@ -15,6 +15,7 @@ public class SlidingObsticle : MonoBehaviour
     private float slideDistance = 2.5f;
     [SerializeField]
     private string SlideDirection = "Left";
+    private bool startClosed=true;
     void Start()
     {
         pickRGB.colorPickEvent += StartOpening;
@@ -40,11 +41,21 @@ public class SlidingObsticle : MonoBehaviour
     }
     private void StartOpening()
     {
+        transform.position = startingPosition;
         isOpening = true;
     }
     private void StartClosing()
     {
-        isClosing = true;
+        if(startClosed==true)
+        {
+            startClosed = false;
+            isClosing = true;
+        }
+        else
+        {
+            transform.position = openPosition;
+            isClosing = true;
+        }
     }
     private void Update()
     {

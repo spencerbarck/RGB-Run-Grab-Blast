@@ -2416,19 +2416,10 @@ MonoBehaviour:
   pickRGB: {fileID: 28741317}
   WaveNumber: 0
   LastWave: 10
-  EnemiesInWave: 0a0000000a0000000a0000000a0000000c0000000f0000001100000014000000190000001e000000
+  EnemiesInWave: 01000000
   PickupsInWave: 17
   EnemyColorInWave:
   - 0
-  - 0.1
-  - 0.2
-  - 0.3
-  - 0.4
-  - 0.5
-  - 0.6
-  - 0.7
-  - 0.8
-  - 0.9
   WaveStarted: 0
   PickupColorChoice: {r: 1, g: 0, b: 0, a: 1}
   EnemiesLeftInWave: 0

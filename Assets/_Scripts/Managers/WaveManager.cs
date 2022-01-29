@@ -10,9 +10,11 @@ public class WaveManager : MonoBehaviour
     private PickRGBUI pickRGB;
     public int WaveNumber = 0;
     public int LastWave = 10;
-    public int[] EnemiesInWave = {10,10,10,10,12,15,17,20,25,30};
-    public int PickupsInWave = 51;
-    public float[] EnemyColorInWave = {0f,0.1f,0.2f,0.3f,0.4f,0.5f,0.6f,0.7f,0.8f,0.9f};
+    //public int[] EnemiesInWave = {10,10,10,10,12,15,17,20,25,30};
+    public int[] EnemiesInWave = {1};
+    public int PickupsInWave = 17;
+    //public float[] EnemyColorInWave = {0f,0.05f,0.1f,0.25f,0.4f,0.5f,0.6f,0.7f,0.8f,0.9f};
+    public float[] EnemyColorInWave = {0f};
     private EnemySpawner[] enemySpawners;
     private PickupSpawner[] pickupSpawners;
     public bool WaveStarted;
@@ -48,7 +50,15 @@ public class WaveManager : MonoBehaviour
         FindObjectOfType<PlayerCollision>().MaxOutHealth();
 
         WaveNumber++;
-        EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
+        Debug.Log(WaveNumber);
+        Debug.Log(EnemiesInWave.Length);
+
+        if(WaveNumber<=EnemiesInWave.Length)
+            EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
+        else
+            EnemiesLeftInWave = (WaveNumber-1)*3;
+        Debug.Log(EnemiesLeftInWave);
+
         PickupsLeftInWave = PickupsInWave;
 
         List<PickupSpawner> spawnList = new List<PickupSpawner>();

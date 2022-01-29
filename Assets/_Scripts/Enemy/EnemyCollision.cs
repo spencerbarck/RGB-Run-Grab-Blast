@@ -70,7 +70,12 @@ public class EnemyCollision : CircleCollision
             float r = 0;
             float g = 0;
             float b = 0;
-            while((r+g+b<WaveManager.instance.EnemyColorInWave[WaveManager.instance.WaveNumber-1]))
+            float maxColor;
+            if(WaveManager.instance.WaveNumber-1<WaveManager.instance.EnemyColorInWave.Length)
+                maxColor = WaveManager.instance.EnemyColorInWave[WaveManager.instance.WaveNumber-1];
+            else
+                maxColor = 2f;
+            while((r+g+b<maxColor))
             {
                 r = Random.Range(0f,1f);
                 g = Random.Range(0f,1f);

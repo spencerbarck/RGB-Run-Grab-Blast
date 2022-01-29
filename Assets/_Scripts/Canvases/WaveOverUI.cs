@@ -7,22 +7,24 @@ public class WaveOverUI : MonoBehaviour
 {
     private Vector3 startingPosition;
     
-    public float targetTime = 4.0f;
-    public float timer = 4f;
+    public float targetTime = 3.0f;
+    public float timer = 0f;
     void Start()
     {
-        GetComponent<Canvas>().enabled=true;
+        GetComponent<Canvas>().enabled=false;
         GameManager.instance.lastKillEvent += StartMove;
     }
     private void Update()
     {
         timer -= Time.deltaTime;
-        GetComponent<CanvasScaler>().scaleFactor-=0.001f;
+        
         if (timer <= 0.0f)
         {
-            GetComponent<CanvasScaler>().scaleFactor-=1f;
             StopMove();
+            GetComponent<CanvasScaler>().scaleFactor=1f;
         }
+        else
+        GetComponent<CanvasScaler>().scaleFactor-=0.001f;
     }
  
     private void StartMove()
