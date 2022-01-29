@@ -1,26 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveOverUI : MonoBehaviour
 {
     private Vector3 startingPosition;
-    private bool isMove = false;
+    
+    public float targetTime = 4.0f;
+    public float timer = 4f;
     void Start()
     {
-        startingPosition = transform.position;
+        GetComponent<Canvas>().enabled=true;
         GameManager.instance.lastKillEvent += StartMove;
     }
-
-    void Update()
+    private void Update()
     {
-        if(isMove)
+        timer -= Time.deltaTime;
+        GetComponent<CanvasScaler>().scaleFactor-=0.001f;
+        if (timer <= 0.0f)
         {
-            transform.Translate(Vector3.right * Time.deltaTime*8f);
+            GetComponent<CanvasScaler>().scaleFactor-=1f;
+            StopMove();
         }
     }
+ 
     private void StartMove()
     {
-        isMove = true;
+        timer=targetTime;
+        GetComponent<Canvas>().enabled=true;
+    }
+    private void StopMove()
+    {
+        GetComponent<Canvas>().enabled=false;
     }
 }
