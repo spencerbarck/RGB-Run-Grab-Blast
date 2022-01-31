@@ -10,11 +10,11 @@ public class WaveManager : MonoBehaviour
     private PickRGBUI pickRGB;
     public int WaveNumber = 0;
     public int LastWave = 10;
-    //public int[] EnemiesInWave = {10,10,10,10,12,15,17,20,25,30};
-    public int[] EnemiesInWave = {1};
+    public int[] EnemiesInWave = {10,10,10,10,12,15,17,20,25,30};
+    //public int[] EnemiesInWave = {1};
     public int PickupsInWave = 17;
-    //public float[] EnemyColorInWave = {0f,0.05f,0.1f,0.25f,0.4f,0.5f,0.6f,0.7f,0.8f,0.9f};
-    public float[] EnemyColorInWave = {0f};
+    public float[] EnemyColorInWave = {0f,0.05f,0.1f,0.25f,0.4f,0.5f,0.6f,0.7f,0.8f,0.9f};
+    //public float[] EnemyColorInWave = {0f};
     private EnemySpawner[] enemySpawners;
     private PickupSpawner[] pickupSpawners;
     public bool WaveStarted;

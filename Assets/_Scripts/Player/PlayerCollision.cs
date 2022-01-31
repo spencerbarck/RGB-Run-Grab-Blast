@@ -59,6 +59,7 @@ public class PlayerCollision : CircleCollision
     {
         if(collsion.gameObject.layer == LayerMask.NameToLayer("OutOfBounds"))
         {
+            SoundManager.instance.PlaySound("BoarderHurt");
             Death();
         }
     }

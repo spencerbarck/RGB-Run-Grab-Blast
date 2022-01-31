@@ -2754,6 +2754,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: BoarderHurt
+    clip: {fileID: 8300000, guid: fda3b49bb8e68f44bb1021fb68d90372, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1694085024
 Transform:
   m_ObjectHideFlags: 0
