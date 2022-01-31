@@ -61,8 +61,7 @@ public class EnemyCollision : CircleCollision
         SoundManager.instance.PlaySound("EnemyDeath");
         base.Death();
         GameManager.instance.RemoveEnemy();
-    }
-    
+    } 
     private void SetEnemyColor()
     {
         if(!menuEnemy)

@@ -38,16 +38,10 @@ public class PlayerCollision : CircleCollision
         GetComponent<PolygonCollider2D>().enabled = false;
         FindObjectOfType<CameraManager>().enabled = false;
     }
-
     public void IncreaseHealth(float rValue)
     {
         cappedHealth += rValue*rgbToHealthConversion;
         health += rValue*rgbToHealthConversion;
-        //if(health < cappedHealth)
-        //{
-        //    health += (rValue*rgbToHealthConversion)/2;
-        //    if(health>cappedHealth) health = cappedHealth;
-        //}
     }
     public float GetHealth()
     {
@@ -60,5 +54,12 @@ public class PlayerCollision : CircleCollision
     public void MaxOutHealth()
     {
         health = cappedHealth;
+    }
+    private void OnCollisionEnter2D(Collision2D collsion)
+    {
+        if(collsion.gameObject.layer == LayerMask.NameToLayer("OutOfBounds"))
+        {
+            Death();
+        }
     }
 }

@@ -50,14 +50,11 @@ public class WaveManager : MonoBehaviour
         FindObjectOfType<PlayerCollision>().MaxOutHealth();
 
         WaveNumber++;
-        Debug.Log(WaveNumber);
-        Debug.Log(EnemiesInWave.Length);
 
         if(WaveNumber<=EnemiesInWave.Length)
             EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
         else
             EnemiesLeftInWave = (WaveNumber-1)*3;
-        Debug.Log(EnemiesLeftInWave);
 
         PickupsLeftInWave = PickupsInWave;
 
@@ -87,7 +84,6 @@ public class WaveManager : MonoBehaviour
             }
         }
     }
-
     private void WaveEnd()
     {
         SoundManager.instance.PlaySound("WaveEnd");
