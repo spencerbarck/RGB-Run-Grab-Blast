@@ -10,10 +10,12 @@ public class WaveManager : MonoBehaviour
     private PickRGBUI pickRGB;
     public int WaveNumber = 0;
     public int LastWave = 10;
-    public int[] EnemiesInWave = {10,10,10,10,12,15,17,20,25,30};
+    [HideInInspector]
+    public int[] EnemiesInWave = {15,16,17,20,25,27,30,35,27,40};
     //public int[] EnemiesInWave = {1};
     public int PickupsInWave = 17;
-    public float[] EnemyColorInWave = {0f,0.05f,0.1f,0.25f,0.4f,0.5f,0.6f,0.7f,0.8f,0.9f};
+    [HideInInspector]
+    public float[] EnemyColorInWave = {0f,0.05f,0.1f,0.25f,0.4f,0.5f,0.6f,0.7f,0.8f,1f};
     //public float[] EnemyColorInWave = {0f};
     private EnemySpawner[] enemySpawners;
     private PickupSpawner[] pickupSpawners;
@@ -42,6 +44,13 @@ public class WaveManager : MonoBehaviour
     }
     private void WaveStart()
     {
+        if(GameManager.instance.PlayerStats.Health+
+            GameManager.instance.PlayerStats.Damage+
+            GameManager.instance.PlayerStats.Speed>640)
+        {
+            PickupsInWave=0;
+        }
+
         SoundManager.instance.PlaySound("WaveStart");
         SoundManager.instance.StopSound("StartMenuMusic");
         SoundManager.instance.StopSound("BetweenWaveMusic");
@@ -54,7 +63,7 @@ public class WaveManager : MonoBehaviour
         if(WaveNumber<=EnemiesInWave.Length)
             EnemiesLeftInWave = EnemiesInWave[WaveNumber-1];
         else
-            EnemiesLeftInWave = (WaveNumber-1)*3;
+            EnemiesLeftInWave = (WaveNumber-1)*4+5;
 
         PickupsLeftInWave = PickupsInWave;
 

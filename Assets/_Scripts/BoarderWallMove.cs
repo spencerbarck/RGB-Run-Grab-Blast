@@ -6,12 +6,12 @@ public class BoarderWallMove : MonoBehaviour
 {
     [SerializeField]
     private PickRGBUI pickRGB;
-    public float timeRemaining = 30;
+    private float timeRemaining = 30;
     private bool isWaiting = false;
     private bool isMoving = false;
     private bool isReturning = false;
     [SerializeField]
-    private string wallType;
+    public string wallType;
     private Vector3 startingPosition;
     private Vector3 movedPosition;
     private void Start()
@@ -48,6 +48,7 @@ public class BoarderWallMove : MonoBehaviour
             }
             else
             {
+                SoundManager.instance.PlaySoundLoud("BoarderMove");
                 isMoving = true;
                 isWaiting = false;
                 timeRemaining = 30f;
@@ -69,6 +70,8 @@ public class BoarderWallMove : MonoBehaviour
     }
     private void StartReturning()
     {
+        isWaiting = false;
+        timeRemaining = 30f;
         isMoving=false;
         isReturning = true;
     }

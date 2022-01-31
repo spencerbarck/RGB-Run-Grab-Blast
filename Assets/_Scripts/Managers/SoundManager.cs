@@ -43,8 +43,12 @@ public class SoundManager : MonoBehaviour
         s.source.Stop();
     }
 
-    private void Update()
+    public void PlaySoundLoud(string name)
     {
-        
+        Sound s = Array.Find(sounds, sound => sound.name ==name);
+        if(s == null)
+            return;
+        s.volume = 3f;
+        s.source.Play();
     }
 }

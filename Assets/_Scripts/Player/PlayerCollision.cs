@@ -57,10 +57,24 @@ public class PlayerCollision : CircleCollision
     }
     private void OnCollisionEnter2D(Collision2D collsion)
     {
+
         if(collsion.gameObject.layer == LayerMask.NameToLayer("OutOfBounds"))
         {
-            SoundManager.instance.PlaySound("BoarderHurt");
-            Death();
+            
+            SoundManager.instance.PlaySoundLoud("BoarderHurt");
+            var dmg = new Damage();
+            if(collsion.gameObject.GetComponentInParent<BoarderWallMove>().wallType=="Left")
+                dmg.origin = new Vector3(transform.position.x-0.5f,transform.position.y,transform.position.z);
+            if(collsion.gameObject.GetComponentInParent<BoarderWallMove>().wallType=="Right")
+                dmg.origin = new Vector3(transform.position.x+0.1f,transform.position.y,transform.position.z);
+            if(collsion.gameObject.GetComponentInParent<BoarderWallMove>().wallType=="Up")
+                dmg.origin = new Vector3(transform.position.x,transform.position.y+0.1f,transform.position.z);
+            if(collsion.gameObject.GetComponentInParent<BoarderWallMove>().wallType=="Down")
+                dmg.origin = new Vector3(transform.position.x,transform.position.y-0.1f,transform.position.z);
+            dmg.damageAmount = 100f;
+            dmg.pushForce = 150f;
+
+            TakeDamage(dmg);
         }
     }
 }

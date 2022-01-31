@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public WaveButton waveButton;
     [SerializeField]
     private EnemiesLeftCount enemiesLeftCount;
+    [SerializeField]
+    private TimerCanvas timerCanvas;
     
     [SerializeField]
     private WaveNumberUI waveNumberUI;
@@ -80,6 +82,7 @@ public class GameManager : MonoBehaviour
         //Update UI
         enemiesLeftCount.ShowCount();
         waveNumberUI.ShowCount();
+        timerCanvas.ShowTimer();
     }
     public void AddEnemies(int enemies)
     {
