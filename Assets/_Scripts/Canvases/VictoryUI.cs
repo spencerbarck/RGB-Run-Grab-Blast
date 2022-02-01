@@ -5,19 +5,21 @@ using UnityEngine;
 public class VictoryUI : MonoBehaviour
 {
     private bool isContinue = false;
+    private bool isShown = false;
     private void Start()
     {
         GetComponent<Canvas>().enabled=false;
     }
     private void Update()
     {
-        if((WaveManager.instance.WaveNumber>10)&&!isContinue)
+        if((WaveManager.instance.WaveNumber>1)&&(!isContinue)&&(!isShown))
         {
             ToggleVisible();
         }
     }
     private void ToggleVisible()
     {
+        isShown=true;
         GetComponent<Canvas>().enabled=true;
         Time.timeScale = 0f;
     }
