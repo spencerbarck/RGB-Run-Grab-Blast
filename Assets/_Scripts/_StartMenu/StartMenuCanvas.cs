@@ -46,4 +46,8 @@ public class StartMenuCanvas : MonoBehaviour
         else if(character.color.g>0f) character.color = Color.red;
         else character.color = Color.green;
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
