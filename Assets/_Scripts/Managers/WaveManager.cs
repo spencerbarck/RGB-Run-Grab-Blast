@@ -12,11 +12,9 @@ public class WaveManager : MonoBehaviour
     public int LastWave = 10;
     [HideInInspector]
     public int[] EnemiesInWave = {15,16,17,20,25,27,30,35,27,40};
-    //public int[] EnemiesInWave = {1};
     public int PickupsInWave = 17;
     [HideInInspector]
-    public float[] EnemyColorInWave = {0f,0.05f,0.1f,0.25f,0.4f,0.5f,0.6f,0.7f,0.8f,1f};
-    //public float[] EnemyColorInWave = {0f};
+    public float[] EnemyColorInWave = {0f,0.25f,0.5f,.75f,1f,1.25f,1.5f,1.75f,2f,2.5f};
     private EnemySpawner[] enemySpawners;
     private PickupSpawner[] pickupSpawners;
     public bool WaveStarted;

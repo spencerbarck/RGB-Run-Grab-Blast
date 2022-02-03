@@ -13,6 +13,13 @@ public class StartMenuCanvas : MonoBehaviour
     private int redHead = 0;
     private int greenHead = 5;
     private int blueHead = 11;
+    [SerializeField]
+    private Slider volumeSlider;
+    private void Start()
+    {
+        //PlayerPrefs.SetFloat("volume", 1f);
+        volumeSlider.value = PlayerPrefs.GetFloat("volume");
+    }
     private void Update()
     {
         textColorTimer -= Time.deltaTime;
@@ -49,5 +56,10 @@ public class StartMenuCanvas : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void SetVolume(float volume)
+    {
+        PlayerPrefs.SetFloat("volume", volume);
+        AudioListener.volume = PlayerPrefs.GetFloat("volume");
     }
 }

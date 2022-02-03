@@ -12,7 +12,7 @@ public class AssistUI : MonoBehaviour
     void Start()
     {
         startingPosition = scrollTransform.position;
-        scrollTransform.position = new Vector3(scrollTransform.position.x,scrollTransform.position.y+10000,scrollTransform.position.z);
+        //scrollTransform.position = new Vector3(scrollTransform.position.x,scrollTransform.position.y+10000,scrollTransform.position.z);
         pickRGB.colorPickEvent += ShowScroll;
     }
 

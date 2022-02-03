@@ -33,7 +33,29 @@ public class PlayerMover : CircleMovement
 
     private void FixedUpdate()
     {
-        Vector2 moveNoForce = movement * speed;
+        /*
+        if((movement.x==1)&&(movement.y==1))
+        {
+            movement.x=0.5f;
+            movement.y=0.5f;
+        }
+        if((movement.x==-1)&&(movement.y==1))
+        {
+            movement.x=-0.5f;
+            movement.y=0.5f;
+        }
+        if((movement.x==1)&&(movement.y==-1))
+        {
+            movement.x=0.5f;
+            movement.y=-0.5f;
+        }
+        if((movement.x==-1)&&(movement.y==-1))
+        {
+            movement.x=-0.5f;
+            movement.y=-0.5f;
+        }*/
+        Vector2 moveNormal = movement.normalized;
+        Vector2 moveNoForce = moveNormal * speed;
         
         //Apply push direction
         moveNoForce.x += pushDirection.x;

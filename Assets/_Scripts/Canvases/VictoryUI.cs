@@ -9,30 +9,39 @@ public class VictoryUI : MonoBehaviour
     private void Start()
     {
         GetComponent<Canvas>().enabled=false;
+        GameManager.instance.lastKillEvent += ToggleVisible;
     }
     private void Update()
     {
-        if((WaveManager.instance.WaveNumber>1)&&(!isContinue)&&(!isShown))
-        {
-            ToggleVisible();
-        }
+        if(isShown)SoundManager.instance.StopSound("BetweenWaveMusic");
     }
     private void ToggleVisible()
     {
-        isShown=true;
-        GetComponent<Canvas>().enabled=true;
-        Time.timeScale = 0f;
+        if((WaveManager.instance.WaveNumber==10)&&(!isContinue)&&(!isShown))
+        {
+            SoundManager.instance.PlaySound("VictoryMusic");
+            SoundManager.instance.StopSound("BetweenWaveMusic");
+            SoundManager.instance.StopSound("BetweenWaveMusic");
+            SoundManager.instance.StopSound("WaveStartMusic1");
+            isShown=true;
+            GetComponent<Canvas>().enabled=true;
+            Time.timeScale = 0f;
+        }
     }
     public void NavigateMenu()
     {
         Time.timeScale = 1f;
-        SoundManager.instance.StopSound("BetweenWaveMusic");
-        SoundManager.instance.StopSound("WaveStartMusic1");
+        SoundManager.instance.StopSound("VictoryMusic");
         UnityEngine.SceneManagement.SceneManager.LoadScene("StartMenu");
+        isShown=false;
     }
     public void Continue()
     {
+        SoundManager.instance.PlaySound("BetweenWaveMusic");
+        SoundManager.instance.StopSound("VictoryMusic");
         GetComponent<Canvas>().enabled=false;
+        isShown=false;
         Time.timeScale = 1f;
     }
+    
 }

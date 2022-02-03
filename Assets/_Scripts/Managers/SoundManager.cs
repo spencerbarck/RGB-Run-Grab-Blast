@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
     public Sound[] sounds;
+    public float volumeModifier = 1f;
     
     private void Awake()
     {
@@ -30,6 +31,7 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySound(string name)
     {
+        AudioListener.volume = PlayerPrefs.GetFloat("volume");
         Sound s = Array.Find(sounds, sound => sound.name ==name);
         if(s == null)
             return;
@@ -37,6 +39,7 @@ public class SoundManager : MonoBehaviour
     }
     public void StopSound(string name)
     {
+        AudioListener.volume = PlayerPrefs.GetFloat("volume");
         Sound s = Array.Find(sounds, sound => sound.name ==name);
         if(s == null)
             return;
@@ -45,10 +48,15 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySoundLoud(string name)
     {
+        AudioListener.volume = PlayerPrefs.GetFloat("volume");
         Sound s = Array.Find(sounds, sound => sound.name ==name);
         if(s == null)
             return;
         s.volume = 3f;
         s.source.Play();
+    }
+    private void Update()
+    {
+        
     }
 }

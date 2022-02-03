@@ -73,12 +73,21 @@ public class EnemyCollision : CircleCollision
             if(WaveManager.instance.WaveNumber-1<WaveManager.instance.EnemyColorInWave.Length)
                 maxColor = WaveManager.instance.EnemyColorInWave[WaveManager.instance.WaveNumber-1];
             else
-                maxColor = 2f;
-            while((r+g+b<maxColor))
+                maxColor = 2.5f;
+            if(maxColor>0)
             {
                 r = Random.Range(0f,1f);
                 g = Random.Range(0f,1f);
                 b = Random.Range(0f,1f);
+            }
+            float colorTotal = r+b+g;
+            float minColor = maxColor - 0.5f;
+            while((colorTotal>maxColor)||(colorTotal<minColor))
+            {
+                r = Random.Range(0f,1f);
+                g = Random.Range(0f,1f);
+                b = Random.Range(0f,1f);
+                colorTotal = r+b+g;
             }
             GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f,r),Random.Range(0f,g),Random.Range(0f,b),1f);
         }
